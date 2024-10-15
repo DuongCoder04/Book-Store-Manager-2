@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "jkbd8GaguV8=",
+  "success": true,
+  "projectFilePath": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\WindownsFormsApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\duong\\.nuget\\packages\\entityframework\\6.5.1\\entityframework.6.5.1.nupkg.sha512"
+  ],
+  "logs": []
+}
