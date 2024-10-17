@@ -110,6 +110,16 @@ namespace WindowsFormsApp
         {
             OpenForm<formCustomer>();
         }
+
+        private void btnReport_Click(object sender, EventArgs e)
+        {
+            OpenForm<formSalesReport>();
+        }
+
+        private void btnStatistics_Click(object sender, EventArgs e)
+        {
+            OpenForm<formSalesStatistics>();
+        }
     }
 }
 

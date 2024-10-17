@@ -11,6 +11,9 @@ namespace WindowsFormsApp.View
         public formCustomer()
         {
             InitializeComponent();
+            // Ngăn người dùng thay đổi kích cỡ form
+            this.FormBorderStyle = FormBorderStyle.FixedSingle; // Hoặc FixedDialog
+            this.MaximizeBox = false; // Vô hiệu hóa nút phóng to
         }
 
         private void formCustomer_Load(object sender, EventArgs e)

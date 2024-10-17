@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Data;
 using System.Linq;
-using System.Runtime.Remoting.Contexts;
 using System.Windows.Forms;
 using WindowsFormsApp.DataService;
 using WindowsFormsApp.DataSet;
@@ -15,7 +14,15 @@ namespace WindowsFormsApp.View
         private dsBillDetails billDataSet;
         public formNewBill()
         {
+            // Ngăn người dùng thay đổi kích cỡ form
+            this.FormBorderStyle = FormBorderStyle.FixedSingle; // Hoặc FixedDialog
+            this.MaximizeBox = false; // Vô hiệu hóa nút phóng to
             InitializeComponent();
+            CreateDataTable();
+        }
+        #region DataSet
+        private void CreateDataTable()
+        {
             billDataSet = new dsBillDetails();
 
             // Đảm bảo bảng "BillTable" đã tồn tại trong DataSet
@@ -41,7 +48,6 @@ namespace WindowsFormsApp.View
                 billDataSet.Tables.Add(billTable);
             }
         }
-        #region DataSet
         // Phương thức lấy dữ liệu hóa đơn theo IdBill và đổ vào DataSet đã tạo
         private void GetBillData(int billId)
         {
@@ -130,13 +136,41 @@ namespace WindowsFormsApp.View
             report.SetDataSource(billDetails.ToList());
 
             // Tạo một form hiển thị báo cáo
-            formReport f = new formReport(); // Giả sử bạn có một form để hiển thị báo cáo
+            formReportBills f = new formReportBills(); // Giả sử bạn có một form để hiển thị báo cáo
 
             // Đặt báo cáo Crystal Report vào viewer trong form
             f.crystalReportViewer.ReportSource = report;
 
             // Hiển thị form báo cáo
             f.Show();
+        }
+        private void SetHeaderDataGridViewBills()
+        {
+            dataGridViewBills.Columns["Id"].HeaderText = "Mã hóa đơn";
+            dataGridViewBills.Columns["CheckIn"].HeaderText = "Ngày lập";
+            dataGridViewBills.Columns["CheckOut"].HeaderText = "Ngày thanh toán";
+            dataGridViewBills.Columns["NameStaff"].HeaderText = "Người lập";
+        }
+        private void SetHeaderDataGridViewBooks()
+        {
+            dataGridViewBooks.Columns["Id"].HeaderText = "Mã sách";
+            dataGridViewBooks.Columns["Title"].HeaderText = "Tên sách";
+            dataGridViewBooks.Columns["Price"].HeaderText = "Đơn giá";
+            dataGridViewBooks.Columns["Price"].DefaultCellStyle.Format = "C0";
+            dataGridViewBooks.Columns["Price"].DefaultCellStyle.FormatProvider = new System.Globalization.CultureInfo("vi-VN");
+        }
+        private void SetHeaderDataGridViewBillDetails()
+        {
+            dataGridViewBillDetails.Columns["IdBill"].HeaderText = "Mã hóa đơn";
+            dataGridViewBillDetails.Columns["IdBook"].HeaderText = "Mã sách";
+            dataGridViewBillDetails.Columns["Title"].HeaderText = "Tên sách";
+            dataGridViewBillDetails.Columns["Quantity"].HeaderText = "Số lượng";
+            dataGridViewBillDetails.Columns["Price"].HeaderText = "Đơn giá";
+            dataGridViewBillDetails.Columns["Total"].HeaderText = "Thành tiền";
+            dataGridViewBillDetails.Columns["Price"].DefaultCellStyle.Format = "C0";
+            dataGridViewBillDetails.Columns["Price"].DefaultCellStyle.FormatProvider = new System.Globalization.CultureInfo("vi-VN");
+            dataGridViewBillDetails.Columns["Total"].DefaultCellStyle.Format = "C0";
+            dataGridViewBillDetails.Columns["Total"].DefaultCellStyle.FormatProvider = new System.Globalization.CultureInfo("vi-VN");
         }
         #endregion
         #region Methods
@@ -200,8 +234,8 @@ namespace WindowsFormsApp.View
                     var bill = new Bill
                     {
                         IdCustomer = int.Parse(cbIdCustomer.SelectedValue.ToString()),
-                        CheckIn = dtCheckIn.Value,
-                        CheckOut = dtCheckOut.Value,
+                        CheckIn = dtCheckIn.Value.Date,
+                        CheckOut = dtCheckOut.Value.Date,
                         IdUser = formMain.__IdUser,
                     };
                     context.myBill.Add(bill);
@@ -250,8 +284,8 @@ namespace WindowsFormsApp.View
                     var bill = context.myBill.SingleOrDefault(b => b.Id == billId);
                     if (bill != null)
                     {
-                        bill.CheckIn = dtCheckIn.Value;
-                        bill.CheckOut = dtCheckOut.Value;
+                        bill.CheckIn = dtCheckIn.Value.Date;
+                        bill.CheckOut = dtCheckOut.Value.Date;
                         bill.IdUser = formMain.__IdUser;
                         bill.IdCustomer = int.Parse(cbIdCustomer.SelectedValue.ToString());
                         return context.SaveChanges();
@@ -336,11 +370,8 @@ namespace WindowsFormsApp.View
             dtCheckIn.Value = DateTime.Now;
             dtCheckOut.Value = DateTime.Now;
             dtDateFind.Value = DateTime.Now;
-
-            dataGridViewBills.Columns["Id"].HeaderText = "Mã hóa đơn";
-            dataGridViewBills.Columns["CheckIn"].HeaderText = "Ngày lập";
-            dataGridViewBills.Columns["CheckOut"].HeaderText = "Ngày thanh toán";
-            dataGridViewBills.Columns["NameStaff"].HeaderText = "Người lập";
+            SetHeaderDataGridViewBills();
+            SetHeaderDataGridViewBooks();
         }
         private void btnDeleteBill_Click(object sender, EventArgs e)
         {
@@ -409,12 +440,7 @@ namespace WindowsFormsApp.View
                                                  })
                                                  .ToList();
                         dataGridViewBillDetails.DataSource = billDetails;
-                        dataGridViewBillDetails.Columns["IdBill"].HeaderText = "Mã hóa đơn";
-                        dataGridViewBillDetails.Columns["IdBook"].HeaderText = "Mã sách";
-                        dataGridViewBillDetails.Columns["Title"].HeaderText = "Tên sách";
-                        dataGridViewBillDetails.Columns["Quantity"].HeaderText = "Số lượng";
-                        dataGridViewBillDetails.Columns["Price"].HeaderText = "Đơn giá";
-                        dataGridViewBillDetails.Columns["Total"].HeaderText = "Thành tiền";
+                        SetHeaderDataGridViewBillDetails();
                         UpdateTotalLabel();
                     }
                 }

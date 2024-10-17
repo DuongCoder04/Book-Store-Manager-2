@@ -46,6 +46,7 @@
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.Web" />
     <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -66,6 +67,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>dsBillDetails.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet\dsSalesReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsSalesReport.xsd</DependentUpon>
     </Compile>
     <Compile Include="formMain.cs">
       <SubType>Form</SubType>
@@ -95,17 +101,17 @@
       <DependentUpon>crNewReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Report\crSalesReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crSalesReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="View\formAuthors.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\formAuthors.Designer.cs">
       <DependentUpon>formAuthors.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\formBill.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\formBill.Designer.cs">
-      <DependentUpon>formBill.cs</DependentUpon>
     </Compile>
     <Compile Include="View\formBook.cs">
       <SubType>Form</SubType>
@@ -143,11 +149,23 @@
     <Compile Include="View\formNewBill.Designer.cs">
       <DependentUpon>formNewBill.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\formReport.cs">
+    <Compile Include="View\formReportBills.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\formReport.Designer.cs">
-      <DependentUpon>formReport.cs</DependentUpon>
+    <Compile Include="View\formReportBills.Designer.cs">
+      <DependentUpon>formReportBills.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\formSalesReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\formSalesReport.Designer.cs">
+      <DependentUpon>formSalesReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\formSalesStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\formSalesStatistics.Designer.cs">
+      <DependentUpon>formSalesStatistics.cs</DependentUpon>
     </Compile>
     <Compile Include="View\formStaff.cs">
       <SubType>Form</SubType>
@@ -166,6 +184,12 @@
     </Compile>
     <Compile Include="View\formUser.Designer.cs">
       <DependentUpon>formUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\formViewSalesReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\formViewSalesReport.Designer.cs">
+      <DependentUpon>formViewSalesReport.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="formMain.resx">
       <DependentUpon>formMain.cs</DependentUpon>
@@ -187,11 +211,12 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>crNewReport.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report\crSalesReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crSalesReport.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\formAuthors.resx">
       <DependentUpon>formAuthors.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\formBill.resx">
-      <DependentUpon>formBill.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\formBook.resx">
       <DependentUpon>formBook.cs</DependentUpon>
@@ -214,14 +239,23 @@
     <EmbeddedResource Include="View\formPublisher.resx">
       <DependentUpon>formPublisher.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\formReport.resx">
-      <DependentUpon>formReport.cs</DependentUpon>
+    <EmbeddedResource Include="View\formReportBills.resx">
+      <DependentUpon>formReportBills.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\formSalesReport.resx">
+      <DependentUpon>formSalesReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\formSalesStatistics.resx">
+      <DependentUpon>formSalesStatistics.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\formStaff.resx">
       <DependentUpon>formStaff.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\formUser.resx">
       <DependentUpon>formUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\formViewSalesReport.resx">
+      <DependentUpon>formViewSalesReport.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DataSet\dsBillDetails.xsc">
       <DependentUpon>dsBillDetails.xsd</DependentUpon>
@@ -233,6 +267,17 @@
     </None>
     <None Include="DataSet\dsBillDetails.xss">
       <DependentUpon>dsBillDetails.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsSalesReport.xsc">
+      <DependentUpon>dsSalesReport.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsSalesReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsSalesReport.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet\dsSalesReport.xss">
+      <DependentUpon>dsSalesReport.xsd</DependentUpon>
     </None>
     <None Include="Properties\DataSources\WindowsFormsApp.Models.Staff.datasource" />
     <None Include="Properties\Settings.settings">

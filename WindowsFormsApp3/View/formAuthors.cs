@@ -11,6 +11,10 @@ namespace WindowsFormsApp.View
         public formAuthors()
         {
             InitializeComponent();
+            // Ngăn người dùng thay đổi kích cỡ form
+            this.FormBorderStyle = FormBorderStyle.FixedSingle; // Hoặc FixedDialog
+            this.MaximizeBox = false; // Vô hiệu hóa nút phóng to
+
         }
 
         #region Method

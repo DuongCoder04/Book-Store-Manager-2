@@ -30,6 +30,8 @@
         {
             this.ribbonControl1 = new DevComponents.DotNetBar.RibbonControl();
             this.ribbonPanel2 = new DevComponents.DotNetBar.RibbonPanel();
+            this.ribbonBar3 = new DevComponents.DotNetBar.RibbonBar();
+            this.btnReport = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonBar1 = new DevComponents.DotNetBar.RibbonBar();
             this.btnCustomer = new DevComponents.DotNetBar.ButtonItem();
             this.rbBill = new DevComponents.DotNetBar.RibbonBar();
@@ -62,6 +64,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.ribbonBar2 = new DevComponents.DotNetBar.RibbonBar();
+            this.btnStatistics = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonControl1.SuspendLayout();
             this.ribbonPanel2.SuspendLayout();
             this.ribbonPanel1.SuspendLayout();
@@ -93,6 +97,8 @@
             // ribbonPanel2
             // 
             this.ribbonPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.ribbonPanel2.Controls.Add(this.ribbonBar2);
+            this.ribbonPanel2.Controls.Add(this.ribbonBar3);
             this.ribbonPanel2.Controls.Add(this.ribbonBar1);
             this.ribbonPanel2.Controls.Add(this.rbBill);
             this.ribbonPanel2.Controls.Add(this.rbPublisher);
@@ -107,6 +113,27 @@
             this.ribbonPanel2.Size = new System.Drawing.Size(1020, 97);
             this.ribbonPanel2.TabIndex = 2;
             // 
+            // ribbonBar3
+            // 
+            this.ribbonBar3.AutoOverflowEnabled = true;
+            this.ribbonBar3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.ribbonBar3.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.btnReport});
+            this.ribbonBar3.Location = new System.Drawing.Point(504, 0);
+            this.ribbonBar3.Name = "ribbonBar3";
+            this.ribbonBar3.Size = new System.Drawing.Size(100, 94);
+            this.ribbonBar3.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.ribbonBar3.TabIndex = 8;
+            this.ribbonBar3.Text = "Báo cáo";
+            // 
+            // btnReport
+            // 
+            this.btnReport.ImagePaddingHorizontal = 8;
+            this.btnReport.Name = "btnReport";
+            this.btnReport.SubItemsExpandWidth = 14;
+            this.btnReport.Text = "Báo cáo";
+            this.btnReport.Click += new System.EventHandler(this.btnReport_Click);
+            // 
             // ribbonBar1
             // 
             this.ribbonBar1.AutoOverflowEnabled = true;
@@ -115,7 +142,7 @@
             this.btnCustomer});
             this.ribbonBar1.Location = new System.Drawing.Point(441, 0);
             this.ribbonBar1.Name = "ribbonBar1";
-            this.ribbonBar1.Size = new System.Drawing.Size(73, 94);
+            this.ribbonBar1.Size = new System.Drawing.Size(63, 94);
             this.ribbonBar1.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.ribbonBar1.TabIndex = 6;
             this.ribbonBar1.Text = "Khách hàng";
@@ -460,6 +487,27 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Phần Mềm Quản Lý Cửa Hàng Sách\r\n";
             // 
+            // ribbonBar2
+            // 
+            this.ribbonBar2.AutoOverflowEnabled = true;
+            this.ribbonBar2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.ribbonBar2.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.btnStatistics});
+            this.ribbonBar2.Location = new System.Drawing.Point(604, 0);
+            this.ribbonBar2.Name = "ribbonBar2";
+            this.ribbonBar2.Size = new System.Drawing.Size(100, 94);
+            this.ribbonBar2.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.ribbonBar2.TabIndex = 9;
+            this.ribbonBar2.Text = "Thống kê";
+            // 
+            // btnStatistics
+            // 
+            this.btnStatistics.ImagePaddingHorizontal = 8;
+            this.btnStatistics.Name = "btnStatistics";
+            this.btnStatistics.SubItemsExpandWidth = 14;
+            this.btnStatistics.Text = "Thống kê";
+            this.btnStatistics.Click += new System.EventHandler(this.btnStatistics_Click);
+            // 
             // formMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -523,6 +571,10 @@
         private System.Windows.Forms.Label label1;
         private DevComponents.DotNetBar.RibbonBar ribbonBar1;
         private DevComponents.DotNetBar.ButtonItem btnCustomer;
+        private DevComponents.DotNetBar.RibbonBar ribbonBar3;
+        private DevComponents.DotNetBar.ButtonItem btnReport;
+        private DevComponents.DotNetBar.RibbonBar ribbonBar2;
+        private DevComponents.DotNetBar.ButtonItem btnStatistics;
     }
 }
 

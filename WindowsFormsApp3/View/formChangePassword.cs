@@ -9,6 +9,9 @@ namespace WindowsFormsApp.View
         public formChangePassword()
         {
             InitializeComponent();
+            // Ngăn người dùng thay đổi kích cỡ form
+            this.FormBorderStyle = FormBorderStyle.FixedSingle; // Hoặc FixedDialog
+            this.MaximizeBox = false; // Vô hiệu hóa nút phóng to
         }
 
         private void formChangePassword_Load(object sender, EventArgs e)

@@ -30,10 +30,12 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.cbStaff = new System.Windows.Forms.ComboBox();
             this.txbSearch = new System.Windows.Forms.TextBox();
             this.txbPermision = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txbPassword = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txbIdUser = new System.Windows.Forms.TextBox();
             this.txbNameUser = new System.Windows.Forms.TextBox();
@@ -69,8 +71,6 @@
             this.buttonItem1 = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonTabItem1 = new DevComponents.DotNetBar.RibbonTabItem();
             this.btnExit = new DevComponents.DotNetBar.ButtonX();
-            this.label6 = new System.Windows.Forms.Label();
-            this.cbStaff = new System.Windows.Forms.ComboBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUser)).BeginInit();
             this.panel1.SuspendLayout();
@@ -99,6 +99,15 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(349, 516);
             this.panel2.TabIndex = 5;
+            // 
+            // cbStaff
+            // 
+            this.cbStaff.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.cbStaff.FormattingEnabled = true;
+            this.cbStaff.Location = new System.Drawing.Point(20, 239);
+            this.cbStaff.Name = "cbStaff";
+            this.cbStaff.Size = new System.Drawing.Size(309, 28);
+            this.cbStaff.TabIndex = 10;
             // 
             // txbSearch
             // 
@@ -136,6 +145,18 @@
             this.txbPassword.Name = "txbPassword";
             this.txbPassword.Size = new System.Drawing.Size(309, 26);
             this.txbPassword.TabIndex = 2;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(197)))));
+            this.label6.Location = new System.Drawing.Point(20, 219);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(90, 19);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Nhân viên";
             // 
             // label4
             // 
@@ -498,27 +519,6 @@
             this.btnExit.TabIndex = 10;
             this.btnExit.Text = "Trở về";
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(197)))));
-            this.label6.Location = new System.Drawing.Point(20, 219);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(90, 19);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Nhân viên";
-            // 
-            // cbStaff
-            // 
-            this.cbStaff.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.cbStaff.FormattingEnabled = true;
-            this.cbStaff.Location = new System.Drawing.Point(20, 239);
-            this.cbStaff.Name = "cbStaff";
-            this.cbStaff.Size = new System.Drawing.Size(309, 28);
-            this.cbStaff.TabIndex = 10;
             // 
             // formUser
             // 

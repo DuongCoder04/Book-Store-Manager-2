@@ -28,7 +28,6 @@ E:\Workspace\C#\BookMan\Book-Store-Manager-main\WindowsFormsApp3\obj\Debug\Windo
 E:\Workspace\C#\BookMan\Book-Store-Manager-main\WindowsFormsApp3\obj\Debug\WindowsFormsApp.Migrations.v1.resources
 E:\Workspace\C#\BookMan\Book-Store-Manager-main\WindowsFormsApp3\obj\Debug\WindowsFormsApp.Properties.Resources.resources
 E:\Workspace\C#\BookMan\Book-Store-Manager-main\WindowsFormsApp3\obj\Debug\WindowsFormsApp.View.formAuthors.resources
-E:\Workspace\C#\BookMan\Book-Store-Manager-main\WindowsFormsApp3\obj\Debug\WindowsFormsApp.View.formBill.resources
 E:\Workspace\C#\BookMan\Book-Store-Manager-main\WindowsFormsApp3\obj\Debug\WindowsFormsApp.View.formBook.resources
 E:\Workspace\C#\BookMan\Book-Store-Manager-main\WindowsFormsApp3\obj\Debug\WindowsFormsApp.View.formCategory.resources
 E:\Workspace\C#\BookMan\Book-Store-Manager-main\WindowsFormsApp3\obj\Debug\WindowsFormsApp.View.formChangePassword.resources
@@ -65,4 +64,7 @@ E:\Workspace\C#\BookMan\Book-Store-Manager-main\WindowsFormsApp3\bin\Debug\Cryst
 E:\Workspace\C#\BookMan\Book-Store-Manager-main\WindowsFormsApp3\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 E:\Workspace\C#\BookMan\Book-Store-Manager-main\WindowsFormsApp3\bin\Debug\stdole.dll
 E:\Workspace\C#\BookMan\Book-Store-Manager-main\WindowsFormsApp3\bin\Debug\CrystalDecisions.Windows.Forms.dll
-E:\Workspace\C#\BookMan\Book-Store-Manager-main\WindowsFormsApp3\obj\Debug\WindowsFormsApp.View.formReport.resources
+E:\Workspace\C#\BookMan\Book-Store-Manager-main\WindowsFormsApp3\obj\Debug\WindowsFormsApp.View.formReportBills.resources
+E:\Workspace\C#\BookMan\Book-Store-Manager-main\WindowsFormsApp3\obj\Debug\WindowsFormsApp.View.formSalesReport.resources
+E:\Workspace\C#\BookMan\Book-Store-Manager-main\WindowsFormsApp3\obj\Debug\WindowsFormsApp.View.formViewSalesReport.resources
+E:\Workspace\C#\BookMan\Book-Store-Manager-main\WindowsFormsApp3\obj\Debug\WindowsFormsApp.View.formSalesStatistics.resources
