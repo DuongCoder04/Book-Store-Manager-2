@@ -59,7 +59,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataService\CryptoLib.cs" />
+    <Compile Include="DataService\Interfaces.cs" />
     <Compile Include="DataService\MyDbContext.cs" />
+    <Compile Include="DataService\Repository.cs" />
+    <Compile Include="DataService\UnitOfWork.cs" />
     <Compile Include="DataSet\dsBillDetails.cs">
       <DependentUpon>dsBillDetails.xsd</DependentUpon>
     </Compile>
@@ -86,7 +89,7 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Authors.cs" />
     <Compile Include="Models\Bill.cs" />
-    <Compile Include="Models\BillIDetail.cs" />
+    <Compile Include="Models\BillDetail.cs" />
     <Compile Include="Models\Book.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Customer.cs" />

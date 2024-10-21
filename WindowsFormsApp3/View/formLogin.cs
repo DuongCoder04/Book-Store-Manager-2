@@ -128,7 +128,7 @@ namespace WindowsFormsApp.View
             {
                 txbUserName.Text = Properties.Settings.Default.UserName;
                 txbPassword.Text = Properties.Settings.Default.Password;
-            }
+            } 
         }
 
         private void ShowLoginError()
@@ -151,5 +151,6 @@ namespace WindowsFormsApp.View
         {
             txbPassword.UseSystemPasswordChar = !txbPassword.UseSystemPasswordChar;
         }
+
     }
 }

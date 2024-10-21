@@ -11,13 +11,16 @@ namespace WindowsFormsApp.Models
         {
             BillDetail = new HashSet<BillDetail>();
         }
-        private int _id = 1;
-        public int Id
+        //private int _id = 1;
+        //public int Id
+        //{
+        //    get { return _id; }
+        //    set { if (value >= 1) _id = value; }
+        //}
+        public string Id
         {
-            get { return _id; }
-            set { if (value >= 1) _id = value; }
+            get;set;
         }
-        
         private DateTime _checkout = DateTime.Now;
         public DateTime CheckOut
         {

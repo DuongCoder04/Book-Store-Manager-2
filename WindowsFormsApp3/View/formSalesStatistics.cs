@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data;
+using System.Data.Entity;
 using System.Linq;
 using System.Windows.Forms;
 using WindowsFormsApp.DataService;
@@ -45,6 +46,8 @@ namespace WindowsFormsApp.View
             using (var context = new MyDbContext())
             {
                 var monthlyStatistics = from billdetail in context.myBillDetail
+                                        where DbFunctions.TruncateTime(billdetail.Bill.CheckOut) >= DbFunctions.TruncateTime(dtStart.Value)
+                                        && DbFunctions.TruncateTime(billdetail.Bill.CheckOut) <= DbFunctions.TruncateTime(dtEnd.Value)
                                         group billdetail by new
                                         {
                                             Month = billdetail.Bill.CheckOut.Month,
@@ -118,7 +121,7 @@ namespace WindowsFormsApp.View
             // Tạo một series mới cho biểu đồ
             var series = new System.Windows.Forms.DataVisualization.Charting.Series
             {
-                Name = "Doanh thu",
+                Name = "Bảng thống kê doanh thu",
                 ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Column // Loại biểu đồ cột
             };
 
@@ -183,6 +186,16 @@ namespace WindowsFormsApp.View
         }
 
         private void rbtYear_CheckedChanged(object sender, EventArgs e)
+        {
+            Retrieve();
+        }
+        
+        private void dtStart_ValueChanged(object sender, EventArgs e)
+        {
+            Retrieve();
+        }
+
+        private void dtEnd_ValueChanged(object sender, EventArgs e)
         {
             Retrieve();
         }
