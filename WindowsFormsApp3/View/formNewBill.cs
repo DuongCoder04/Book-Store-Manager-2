@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Data;
+using System.Data.Entity.Core.Common.CommandTrees.ExpressionBuilder;
 using System.Linq;
+using System.Security.Policy;
 using System.Windows.Forms;
 using WindowsFormsApp.DataService;
 using WindowsFormsApp.DataSet;
@@ -11,6 +13,11 @@ namespace WindowsFormsApp.View
 {
     public partial class formNewBill : Form
     {
+        int idBook;
+        string title;
+        int price;
+        int quantity = 1;
+        DataTable billDetailsTable;
         private dsBillDetails billDataSet;
         public formNewBill()
         {
@@ -21,6 +28,23 @@ namespace WindowsFormsApp.View
             CreateDataTable();
         }
         #region DataSet
+        private void InitializeBillDetailsTable()
+        {
+            // Initialize dataset and datatable
+            if (billDetailsTable == null)
+            {
+                billDetailsTable = new DataTable("BillDetails");
+
+                // Add necessary columns to the BillDetails table
+                billDetailsTable.Columns.Add("Id", typeof(int));
+                billDetailsTable.Columns.Add("Title", typeof(string));
+                billDetailsTable.Columns.Add("Price", typeof(int));
+                billDetailsTable.Columns.Add("Quantity", typeof(int));
+                billDetailsTable.Columns.Add("Total", typeof(int), "Price * Quantity");
+            }
+            // Set data source for the Bill Details DataGridView
+            dataGridViewBillDetails.DataSource = billDetailsTable;
+        }
         private void CreateDataTable()
         {
             billDataSet = new dsBillDetails();
@@ -42,11 +66,11 @@ namespace WindowsFormsApp.View
                 billTable.Columns.Add("CheckOut", typeof(DateTime));
                 billTable.Columns.Add("Quantity", typeof(int));
                 billTable.Columns.Add("Price", typeof(int));
-
                 // Thêm DataTable vào DataSet
                 billDataSet.Tables.Add(billTable);
             }
         }
+        
         // Phương thức lấy dữ liệu hóa đơn theo IdBill và đổ vào DataSet đã tạo
         private void GetBillData(string billId)
         {
@@ -99,7 +123,6 @@ namespace WindowsFormsApp.View
                 }
             }
         }
-
         #endregion
         #region Report
         // Phương thức hiển thị báo cáo Crystal Report
@@ -128,17 +151,12 @@ namespace WindowsFormsApp.View
                               };
             // Tạo một instance của báo cáo Crystal Report
             crNewReport report = new crNewReport();
-
             // Đặt DataSet làm nguồn dữ liệu cho báo cáo
-
             report.SetDataSource(billDetails.ToList());
-
             // Tạo một form hiển thị báo cáo
             formReportBills f = new formReportBills(); // Giả sử bạn có một form để hiển thị báo cáo
-
             // Đặt báo cáo Crystal Report vào viewer trong form
             f.crystalReportViewer.ReportSource = report;
-
             // Hiển thị form báo cáo
             f.Show();
         }
@@ -159,7 +177,6 @@ namespace WindowsFormsApp.View
         }
         private void SetHeaderDataGridViewBillDetails()
         {
-            dataGridViewBillDetails.Columns["IdBill"].HeaderText = "Mã hóa đơn";
             dataGridViewBillDetails.Columns["IdBook"].HeaderText = "Mã sách";
             dataGridViewBillDetails.Columns["Title"].HeaderText = "Tên sách";
             dataGridViewBillDetails.Columns["Quantity"].HeaderText = "Số lượng";
@@ -172,148 +189,93 @@ namespace WindowsFormsApp.View
         }
         #endregion
         #region Methods
+        // Load books from the database into dataGridViewBooks
+        private void LoadBooks()
+        {
+            using (var context = new MyDbContext())
+            {
+                var books = context.myBooks
+                    .Select(b => new { b.Id, b.Title, b.Price })
+                    .ToList();
+                dataGridViewBooks.DataSource = books;
+            }
+        }
+
+        // Load bills from the database into dataGridViewBills
+        private void LoadBills()
+        {
+            using (var context = new MyDbContext())
+            {
+                var bills = context.myBill
+                    .Select(b => new { b.Id, b.CheckIn, b.CheckOut, b.User.Staff.NameStaff })
+                    .ToList();
+                dataGridViewBills.DataSource = bills;
+            }
+        }
+        private void LoadCustomers()
+        {
+            using (var context = new MyDbContext())
+            {
+                cbIdCustomer.DataSource = context.myCustomer.ToList();
+                cbIdCustomer.DisplayMember = "NameCustomer";
+                cbIdCustomer.ValueMember = "ID";
+            }
+        }
+        private void LoadBillDetails(string billId)
+        {
+            using (var context = new MyDbContext())
+            {
+                var billDetails = context.myBillDetail
+                    .Where(bd => bd.IdBill == billId)
+                    .Select(bd => new
+                    {
+                        bd.IdBook,
+                        bd.Book.Title,
+                        bd.Price,
+                        bd.Quantity,
+                        Total = bd.Price * bd.Quantity
+                    })
+                    .ToList();
+
+                // Set the data source for bill details
+                dataGridViewBillDetails.DataSource = billDetails;
+            }
+        }
         void Retrieve()
         {
             try
             {
-                using (var context = new MyDbContext())
-                {
-                    cbIdCustomer.DataSource = context.myCustomer.ToList();
-                    cbIdCustomer.DisplayMember = "NameCustomer";
-                    cbIdCustomer.ValueMember = "ID";
-                    var books = context.myBooks
-                                       .Select(b => new { b.Id, b.Title, b.Price })
-                                       .ToList();
-                    dataGridViewBooks.DataSource = books;
-                    var bills = context.myBill
-                                       .Select(c => new { c.Id, c.CheckIn, c.CheckOut, c.User.Staff.NameStaff })
-                                       .ToList();
-                    dataGridViewBills.DataSource = bills;
-                }
+                LoadBooks();
+                LoadBills();
+                LoadCustomers();
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                ShowError(ex.Message);
             }
         }
+
+        // Update total price based on Bill Details DataGridView
         private void UpdateTotalLabel()
         {
-            decimal total = 0;
-            foreach (DataGridViewRow row in dataGridViewBillDetails.Rows)
-            {
-                if (row.Cells["Total"].Value != null)
-                {
-                    total += Convert.ToDecimal(row.Cells["Total"].Value);
-                }
-            }
+            decimal total = dataGridViewBillDetails.Rows.OfType<DataGridViewRow>()
+                              .Sum(row => int.Parse(row.Cells["Total"].Value.ToString()));
+
             txbTotal.Text = total.ToString("C0", new System.Globalization.CultureInfo("vi-VN"));
         }
+
+        // Set permission for buttons based on user role
         void SetPermission(string permission)
         {
-            bool isEnabled = (permission == "manager" || permission == "staff");
+            bool isEnabled = permission == "manager" || permission == "staff";
             btnInsert.Enabled = isEnabled;
             btnAddBillDetail.Enabled = isEnabled;
             btnRemoveBillDetail.Enabled = isEnabled;
             btnRemoveAll.Enabled = isEnabled;
             btnUpdate.Enabled = isEnabled;
             btnViewBill.Enabled = isEnabled;
-            cbUpdateDateSell.Enabled = isEnabled;
         }
-        //int InsertBill()
-        //{
-        //    try
-        //    {
-        //        using (var context = new MyDbContext())
-        //        {
-        //            var bill = new Bill
-        //            {
-        //                IdCustomer = int.Parse(cbIdCustomer.SelectedValue.ToString()),
-        //                CheckIn = dtCheckIn.Value.Date,
-        //                CheckOut = dtCheckOut.Value.Date,
-        //                IdUser = formMain.__IdUser,
-        //            };
-        //            context.myBill.Add(bill);
-        //            context.SaveChanges();
-        //            return bill.Id;
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        //        return 0;
-        //    }
-        //}
-        //int InsertBillDetail(int billId, int bookId, int quantity, int price)
-        //{
-        //    try
-        //    {
-        //        using (var context = new MyDbContext())
-        //        {
-        //            var billDetail = new BillDetail
-        //            {
-        //                IdBill = billId,
-        //                IdBook = bookId,
-        //                Quantity = quantity,
-        //                Price = price
-        //            };
-        //            context.myBillDetail.Add(billDetail);
-        //            return context.SaveChanges();
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        //        return 0;
-        //    }
-        //}
-        private void InsertBillAndDetails()
-        {
-            try
-            {
-                using (var context = new MyDbContext())
-                {
-                    // Tạo IdBill mới bằng GUID
-                    string newBillId = Guid.NewGuid().ToString();
-
-                    // Tạo hóa đơn mới
-                    var bill = new Bill
-                    {
-                        Id = newBillId, // Sử dụng GUID
-                        IdCustomer = int.Parse(cbIdCustomer.SelectedValue.ToString()),
-                        CheckIn = dtCheckIn.Value.Date,
-                        CheckOut = dtCheckOut.Value.Date,
-                        IdUser = formMain.__IdUser,
-                    };
-                    context.myBill.Add(bill);
-
-                    // Thêm các chi tiết hóa đơn
-                    foreach (DataGridViewRow row in dataGridViewBillDetails.Rows)
-                    {
-                        if (row.Cells["IdBook"].Value != null && row.Cells["Quantity"].Value != null && row.Cells["Price"].Value != null)
-                        {
-                            var billDetail = new BillDetail
-                            {
-                                IdBill = newBillId, // Sử dụng GUID cho IdBill
-                                IdBook = Convert.ToInt32(row.Cells["IdBook"].Value),
-                                Quantity = Convert.ToInt32(row.Cells["Quantity"].Value),
-                                Price = Convert.ToInt32(row.Cells["Price"].Value)
-                            };
-                            context.myBillDetail.Add(billDetail);
-                        }
-                    }
-
-                    // Gọi SaveChanges() một lần để lưu cả bill và billDetails
-                    context.SaveChanges();
-
-                    MessageBox.Show("Tạo hóa đơn và thêm chi tiết hóa đơn thành công!", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
+        // Update existing Bill
         int UpdateBill()
         {
             try
@@ -335,10 +297,11 @@ namespace WindowsFormsApp.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                ShowError(ex.Message);
                 return 0;
             }
         }
+        // Delete a single BillDetail
         int DeleteBillDetail(string billId, int bookId)
         {
             try
@@ -356,10 +319,12 @@ namespace WindowsFormsApp.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                ShowError(ex.Message);
                 return 0;
             }
         }
+
+        // Delete all BillDetails of a specific Bill
         int DeleteAllBillDetails(string billId)
         {
             try
@@ -373,10 +338,11 @@ namespace WindowsFormsApp.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                ShowError(ex.Message);
                 return 0;
             }
         }
+        // Search for bills by date
         void Search()
         {
             try
@@ -392,26 +358,104 @@ namespace WindowsFormsApp.View
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                ShowError(ex.Message);
             }
+        }
+        // Common method to display error messages
+        void ShowError(string message)
+        {
+            MessageBox.Show(message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
         #endregion
         #region Events
+        // Load form và khởi tạo dữ liệu
         private void formNewBill_Load(object sender, EventArgs e)
         {
-            Retrieve();
-            SetPermission(formMain.__Permision);
+            InitializeBillDetailsTable();
+            Retrieve(); // Lấy dữ liệu ban đầu
+            SetPermission(formMain.__Permision); // Cài đặt quyền hạn theo vai trò người dùng
             dtCheckIn.Value = DateTime.Now;
             dtCheckOut.Value = DateTime.Now;
             dtDateFind.Value = DateTime.Now;
-            SetHeaderDataGridViewBills();
-            SetHeaderDataGridViewBooks();
+            SetHeaderDataGridViewBills(); // Đặt tiêu đề cho DataGridView Bills
+            SetHeaderDataGridViewBooks(); // Đặt tiêu đề cho DataGridView Books
         }
+        // Thêm sách vào chi tiết hóa đơn
+        private void btnAddBook_Click(object sender, EventArgs e)
+        {
+            billDetailsTable.Rows.Add(idBook, title, price, quantity);
+            //foreach (DataGridViewRow row in dataGridViewBooks.SelectedRows)
+            //{
+            //    // Check if the book already exists in the bill details
+            //    var existingRow = billDetailsTable.AsEnumerable()
+            //        .FirstOrDefault(r => r.Field<int>("Id") == idBook);
+            //    if (existingRow != null)
+            //    {
+            //        // If the book already exists, increase the quantity
+            //        existingRow["Quantity"] = int.Parse(existingRow["Quantity"].ToString()) + quantity;
+            //    }
+            //    else
+            //    {
+            //        // Add new book to the bill details table
+                    
+            //    }
+            //}
+            dataGridViewBillDetails.DataSource = billDetailsTable;
+            dataGridViewBillDetails.Refresh();
+        }
+        // Thêm hóa đơn
+        private void btnAddBill_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (var context = new MyDbContext())
+                {
+                    // Create a new bill
+                    string newBillId = Guid.NewGuid().ToString();
+                    var bill = new Bill
+                    {
+                        Id = newBillId,
+                        IdCustomer = int.Parse(cbIdCustomer.SelectedValue.ToString()),
+                        CheckIn = dtCheckIn.Value.Date,
+                        CheckOut = dtCheckOut.Value.Date,
+                        IdUser = formMain.__IdUser // Current user ID
+                    };
+
+                    // Add the new bill to the database
+                    context.myBill.Add(bill);
+
+                    // Add each book detail from the dataset to the bill
+                    foreach (DataRow row in billDetailsTable.Rows)
+                    {
+                        var billDetail = new BillDetail
+                        {
+                            IdBill = newBillId,
+                            IdBook = int.Parse(row["Id"].ToString()),
+                            Quantity = int.Parse(row["Quantity"].ToString()),
+                            Price = int.Parse(row["Price"].ToString())
+                        };
+                        context.myBillDetail.Add(billDetail);
+                    }
+
+                    // Save changes to the database
+                    context.SaveChanges();
+                    MessageBox.Show("Hóa đơn và chi tiết hóa đơn đã được thêm thành công!");
+
+                    // Clear the DataTable after successfully adding the bill
+                    billDetailsTable.Clear();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        // Xử lý sự kiện xóa hóa đơn
         private void btnDeleteBill_Click(object sender, EventArgs e)
         {
-            string billId = txbIdBill.Text; // Lấy ID hóa đơn từ TextBox
+            string billId = txbIdBill.Text;
 
-            if (!string.IsNullOrEmpty(billId)) // Kiểm tra chuỗi không rỗng
+            if (!string.IsNullOrEmpty(billId))
             {
                 if (DeleteBill(billId) > 0)
                 {
@@ -428,29 +472,17 @@ namespace WindowsFormsApp.View
                 MessageBox.Show("ID hóa đơn không hợp lệ", "Lỗi");
             }
         }
-
-        private void btnInsert_Click(object sender, EventArgs e)
-        {
-            //string newBillId = InsertBill();
-            //if (!string.IsNullOrEmpty(newBillId)) // Kiểm tra nếu có IdBill hợp lệ
-            //{
-            //    MessageBox.Show("Thêm hóa đơn thành công.", "Thông báo");
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Thêm hóa đơn không thành công.", "Thông báo");
-            //}
-            //formNewBill_Load(sender, e);
-        }
-
+        // Đóng form
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+        // Tải lại dữ liệu
         private void btnReload_Click(object sender, EventArgs e)
         {
             Retrieve();
         }
+        // Xử lý sự kiện khi chọn một hóa đơn từ DataGridView
         private void dataGridViewBills_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
@@ -460,22 +492,17 @@ namespace WindowsFormsApp.View
                     using (var context = new MyDbContext())
                     {
                         string billId = dataGridViewBills.Rows[e.RowIndex].Cells["Id"].Value.ToString();
-                        txbIdBill.Text = billId.ToString();
-                        var billDetails = context.myBillDetail
-                                                 .Where(bd => bd.IdBill == billId)
-                                                 .Select(bd => new
-                                                 {
-                                                     bd.IdBill,
-                                                     bd.IdBook,
-                                                     bd.Book.Title,
-                                                     bd.Quantity,
-                                                     bd.Price,
-                                                     Total = bd.Quantity * bd.Book.Price
-                                                 })
-                                                 .ToList();
-                        dataGridViewBillDetails.DataSource = billDetails;
-                        SetHeaderDataGridViewBillDetails();
-                        UpdateTotalLabel();
+                        var rowToSelect = context.myBill.SingleOrDefault(r => r.Id == billId);
+                        if (rowToSelect != null)
+                        {
+                            txbIdBill.Text = billId;
+                            cbIdCustomer.SelectedValue = rowToSelect.Customer.Id;
+                            dtCheckIn.Value = rowToSelect.CheckIn;
+                            dtCheckOut.Value = rowToSelect.CheckOut;
+                        }
+                        LoadBillDetails(billId);
+                        SetHeaderDataGridViewBillDetails(); // Đặt tiêu đề cho DataGridView Bill Details
+                        UpdateTotalLabel(); // Cập nhật tổng tiền
                     }
                 }
                 catch (Exception ex)
@@ -484,40 +511,15 @@ namespace WindowsFormsApp.View
                 }
             }
         }
-        private void btnAddBillDetail_Click(object sender, EventArgs e)
-        {
-            // Giả sử người dùng sẽ chọn sách từ dataGridViewBooks
-            //if (dataGridViewBooks.CurrentRow != null)
-            //{
-            //    int billId = int.Parse(txbIdBill.Text);
-            //    int bookId = int.Parse(dataGridViewBooks.CurrentRow.Cells["Id"].Value.ToString());
-            //    int quantity = int.Parse(nmQuantity.Value.ToString()); // Hoặc có thể cho phép nhập số lượng từ một ô khác
-            //    int price = int.Parse(dataGridViewBooks.CurrentRow.Cells["Price"].Value.ToString());
-            //    int result = InsertBillDetail(billId, bookId, quantity, price);
-            //    if (result > 0)
-            //    {
-            //        MessageBox.Show("Thêm chi tiết hóa đơn thành công.", "Thông báo");
-            //    }
-            //    else
-            //    {
-            //        MessageBox.Show("Thêm chi tiết hóa đơn không thành công.", "Thông báo");
-            //    }
-            //    UpdateTotalLabel();
-            //    formNewBill_Load(sender, e);
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Vui lòng chọn sách để thêm vào hóa đơn.", "Cảnh báo");
-            //}
-        }
+        // Xóa một chi tiết hóa đơn
         private void btnRemoveBillDetail_Click(object sender, EventArgs e)
         {
             if (dataGridViewBillDetails.CurrentRow != null)
             {
-                string billId = dataGridViewBillDetails.CurrentRow.Cells["IdBill"].Value.ToString();
+                string billId = txbIdBill.Text;
                 int bookId = int.Parse(dataGridViewBillDetails.CurrentRow.Cells["IdBook"].Value.ToString());
-                int result = DeleteBillDetail(billId, bookId);
-                if (result > 0)
+
+                if (DeleteBillDetail(billId, bookId) > 0)
                 {
                     MessageBox.Show("Xóa chi tiết hóa đơn thành công.", "Thông báo");
                 }
@@ -525,19 +527,20 @@ namespace WindowsFormsApp.View
                 {
                     MessageBox.Show("Xóa chi tiết hóa đơn không thành công.", "Thông báo");
                 }
-                UpdateTotalLabel();
-                formNewBill_Load(sender, e);
+                UpdateTotalLabel(); // Cập nhật tổng tiền
+                RetrieveBills(); // Tải lại danh sách hóa đơn và chi tiết
             }
             else
             {
                 MessageBox.Show("Vui lòng chọn chi tiết hóa đơn cần xóa.", "Cảnh báo");
             }
         }
+        // Xóa tất cả chi tiết hóa đơn
         private void btnRemoveAll_Click(object sender, EventArgs e)
         {
             string billId = txbIdBill.Text;
-            int result = DeleteAllBillDetails(billId);
-            if (result > 0)
+
+            if (DeleteAllBillDetails(billId) > 0)
             {
                 MessageBox.Show("Xóa tất cả chi tiết hóa đơn thành công.", "Thông báo");
             }
@@ -545,13 +548,13 @@ namespace WindowsFormsApp.View
             {
                 MessageBox.Show("Xóa tất cả chi tiết hóa đơn không thành công.", "Thông báo");
             }
-            UpdateTotalLabel();
-            formNewBill_Load(sender, e);
+            UpdateTotalLabel(); // Cập nhật tổng tiền
+            RetrieveBills(); // Tải lại danh sách hóa đơn
         }
+        // Cập nhật hóa đơn
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            int result = UpdateBill();
-            if (result > 0)
+            if (UpdateBill() > 0)
             {
                 MessageBox.Show("Cập nhật hóa đơn thành công.", "Thông báo");
             }
@@ -559,58 +562,81 @@ namespace WindowsFormsApp.View
             {
                 MessageBox.Show("Cập nhật hóa đơn không thành công.", "Thông báo");
             }
-            formNewBill_Load(sender, e);
+            RetrieveBills(); // Cập nhật lại danh sách hóa đơn
         }
+        // Xem báo cáo hóa đơn
         private void btnViewBill_Click(object sender, EventArgs e)
         {
-            string billId = txbIdBill.Text; // Sử dụng string thay vì int
+            string billId = txbIdBill.Text;
+
             if (!string.IsNullOrEmpty(billId))
             {
-                // Sử dụng dữ liệu hóa đơn cho báo cáo Crystal Report
-                ShowBillReport(billId); // Gọi phương thức tạo báo cáo
+                ShowBillReport(billId); // Hiển thị báo cáo hóa đơn
             }
             else
             {
                 MessageBox.Show("ID hóa đơn không hợp lệ", "Lỗi");
             }
         }
-
         // Phương thức xóa hóa đơn và chi tiết hóa đơn
         private int DeleteBill(string billId)
         {
-            using (MyDbContext context = new MyDbContext())
+            try
             {
-                // Tìm hóa đơn cần xóa
-                var billToDelete = context.myBill.SingleOrDefault(b => b.Id == billId);
-                if (billToDelete != null)
+                using (var context = new MyDbContext())
                 {
-                    // Lấy danh sách chi tiết hóa đơn liên quan
-                    var billDetails = context.myBillDetail.Where(d => d.IdBill == billId).ToList();
-
-                    // Xóa tất cả chi tiết hóa đơn
-                    context.myBillDetail.RemoveRange(billDetails);
-
-                    // Xóa hóa đơn
-                    context.myBill.Remove(billToDelete);
+                    var billToDelete = context.myBill.SingleOrDefault(b => b.Id == billId);
+                    if (billToDelete != null)
+                    {
+                        var billDetails = context.myBillDetail.Where(d => d.IdBill == billId).ToList();
+                        context.myBillDetail.RemoveRange(billDetails);
+                        context.myBill.Remove(billToDelete);
+                    }
+                    return context.SaveChanges();
                 }
-                return context.SaveChanges(); // Lưu thay đổi vào cơ sở dữ liệu
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return 0;
             }
         }
+        // Lấy lại danh sách hóa đơn
         private void RetrieveBills()
         {
-            // Phương thức lấy lại danh sách hóa đơn (nếu chưa có)
             using (var context = new MyDbContext())
             {
                 var bills = context.myBill
-                                   .Select(c => new { c.Id, c.CheckIn, c.CheckOut, c.User.Staff.NameStaff})
+                                   .Select(c => new { c.Id, c.CheckIn, c.CheckOut, c.User.Staff.NameStaff })
                                    .ToList();
                 dataGridViewBills.DataSource = bills;
             }
         }
+        // Tìm kiếm hóa đơn
         private void btnFind_Click(object sender, EventArgs e)
         {
             Search();
         }
         #endregion
+        private void dataGridViewBooks_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            using (var context = new MyDbContext())
+            {
+                int IDB = int.Parse(dataGridViewBooks.CurrentRow.Cells["Id"].Value.ToString());
+                var book = context.myBooks.SingleOrDefault(b => b.Id == IDB);
+                if (book != null)
+                {
+                    idBook = IDB;
+                    title = book.Title;
+                    price = book.Price;
+                    quantity = int.Parse(nmQuantity.Value.ToString());
+                }
+            }
+        }
+
+        private void nmQuantity_ValueChanged(object sender, EventArgs e)
+        {
+            quantity = int.Parse(nmQuantity.Value.ToString());
+        }
     }
 }

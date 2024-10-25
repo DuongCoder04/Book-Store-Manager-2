@@ -81,7 +81,7 @@ namespace WindowsFormsApp.View
             dataGridViewBillDetail.Columns["Total"].DefaultCellStyle.Format = "C0";
             dataGridViewBillDetail.Columns["Total"].DefaultCellStyle.FormatProvider = new System.Globalization.CultureInfo("vi-VN");
         }
-        private void ShowBillReport(int billId)
+        private void ShowBillReport(string billId)
         {
             var context = new MyDbContext();
             var billDetails = from billdetail in context.myBillDetail
@@ -139,26 +139,6 @@ namespace WindowsFormsApp.View
 
                 // Chuyển đổi kết quả truy vấn thành một danh sách
                 var billDetailList = billDetails.ToList();
-
-                //// Tạo một DataTable và ánh xạ dữ liệu từ danh sách vào DataTable
-                //DataTable billDataTable = new DataTable("BillTable");
-                //billDataTable.Columns.Add("NameReport", typeof(string));
-                //billDataTable.Columns.Add("IdBill", typeof(int));
-                //billDataTable.Columns.Add("IdBook", typeof(int));
-                //billDataTable.Columns.Add("Title", typeof(string));
-                //billDataTable.Columns.Add("Quantity", typeof(int));
-                //billDataTable.Columns.Add("Price", typeof(decimal));
-                //billDataTable.Columns.Add("Total", typeof(decimal));
-                //billDataTable.Columns.Add("CheckOut", typeof(DateTime));
-                //billDataTable.Columns.Add("StartDay", typeof(DateTime));
-                //billDataTable.Columns.Add("EndDay", typeof(DateTime));
-
-                //foreach (var item in billDetailList)
-                //{
-                //    billDataTable.Rows.Add(item.NameReport, item.IdBill, item.IdBook, item.Title, item.Quantity,
-                //                           item.Price, item.Total, item.CheckOut, item.StartDay, item.EndDay);
-                //}
-
                 // Tạo một instance của báo cáo Crystal Report
                 crSalesReport report = new crSalesReport();
 
@@ -218,7 +198,7 @@ namespace WindowsFormsApp.View
 
         private void btnViewBill_Click(object sender, EventArgs e)
         {
-            int billId = int.Parse(dataGridViewBillDetail.CurrentRow.Cells["IdBill"].Value.ToString());
+            string billId = dataGridViewBillDetail.CurrentRow.Cells["IdBill"].Value.ToString();
             ShowBillReport(billId);
         }
 

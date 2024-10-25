@@ -50,12 +50,12 @@ namespace WindowsFormsApp.View
                                         && DbFunctions.TruncateTime(billdetail.Bill.CheckOut) <= DbFunctions.TruncateTime(dtEnd.Value)
                                         group billdetail by new
                                         {
-                                            Month = billdetail.Bill.CheckOut.Month,
-                                            Year = billdetail.Bill.CheckOut.Year
+                                            billdetail.Bill.CheckOut.Month,
+                                            billdetail.Bill.CheckOut.Year
                                         } into g
                                         select new
                                         {
-                                            MonthYear = g.Key.Month + "/" + g.Key.Year,  // Ghép tháng và năm để hiển thị
+                                            Date = g.Key.Month + "/" + g.Key.Year,  // Ghép tháng và năm để hiển thị
                                             TotalAmount = g.Sum(x => x.Price * x.Quantity)  // Tính tổng thành tiền
                                         };
 
@@ -65,7 +65,7 @@ namespace WindowsFormsApp.View
                 if (statisticsList.Any())
                 {
                     dataGridViewStatistics.DataSource = statisticsList;
-                    dataGridViewStatistics.Columns["MonthYear"].HeaderText = "Tháng";
+                    dataGridViewStatistics.Columns["Date"].HeaderText = "Tháng";
                     dataGridViewStatistics.Columns["TotalAmount"].HeaderText = "Tổng thành tiền";
                     dataGridViewStatistics.Columns["TotalAmount"].DefaultCellStyle.Format = "C0";
                     dataGridViewStatistics.Columns["TotalAmount"].DefaultCellStyle.FormatProvider = new System.Globalization.CultureInfo("vi-VN");
@@ -82,10 +82,12 @@ namespace WindowsFormsApp.View
             using (var context = new MyDbContext())
             {
                 var yearlyStatistics = from billdetail in context.myBillDetail
+                                       where DbFunctions.TruncateTime(billdetail.Bill.CheckOut) >= DbFunctions.TruncateTime(dtStart.Value)
+                                        && DbFunctions.TruncateTime(billdetail.Bill.CheckOut) <= DbFunctions.TruncateTime(dtEnd.Value)
                                        group billdetail by billdetail.Bill.CheckOut.Year into g
                                        select new
                                        {
-                                           Year = g.Key,  // Lấy năm để hiển thị
+                                           Date = g.Key,  // Lấy năm để hiển thị
                                            TotalAmount = g.Sum(x => x.Price * x.Quantity)  // Tính tổng thành tiền
                                        };
 
@@ -94,7 +96,7 @@ namespace WindowsFormsApp.View
                 if (statisticsList.Any())
                 {
                     dataGridViewStatistics.DataSource = statisticsList;
-                    dataGridViewStatistics.Columns["Year"].HeaderText = "Năm";
+                    dataGridViewStatistics.Columns["Date"].HeaderText = "Năm";
                     dataGridViewStatistics.Columns["TotalAmount"].HeaderText = "Tổng thành tiền";
                     dataGridViewStatistics.Columns["TotalAmount"].DefaultCellStyle.Format = "C0";
                     dataGridViewStatistics.Columns["TotalAmount"].DefaultCellStyle.FormatProvider = new System.Globalization.CultureInfo("vi-VN");
@@ -133,11 +135,11 @@ namespace WindowsFormsApp.View
             {
                 foreach (DataGridViewRow row in dataGridViewStatistics.Rows)
                 {
-                    if (row.Cells["MonthYear"].Value != null && row.Cells["TotalAmount"].Value != null)
+                    if (row.Cells["Date"].Value != null && row.Cells["TotalAmount"].Value != null)
                     {
                         // Lấy giá trị từ DataGridView
-                        string monthYear = row.Cells["MonthYear"].Value.ToString();
-                        decimal totalAmount = Convert.ToDecimal(row.Cells["TotalAmount"].Value);
+                        string monthYear = row.Cells["Date"].Value.ToString();
+                        int totalAmount = int.Parse(row.Cells["TotalAmount"].Value.ToString());
 
                         // Thêm điểm dữ liệu vào series
                         series.Points.AddXY(monthYear, totalAmount);
@@ -146,18 +148,18 @@ namespace WindowsFormsApp.View
 
                 // Cấu hình biểu đồ cho chế độ tháng
                 chartStatistics.ChartAreas[0].AxisX.Title = "Tháng";
-                chartStatistics.ChartAreas[0].AxisY.Title = "Tổng doanh thu";
+                chartStatistics.ChartAreas[0].AxisY.Title = "Doanh thu";
                 chartStatistics.ChartAreas[0].AxisX.Interval = 1;  // Đặt khoảng cách giữa các nhãn trên trục X
             }
             else if (rbtYear.Checked) // Chế độ năm
             {
                 foreach (DataGridViewRow row in dataGridViewStatistics.Rows)
                 {
-                    if (row.Cells["Year"].Value != null && row.Cells["TotalAmount"].Value != null)
+                    if (row.Cells["Date"].Value != null && row.Cells["TotalAmount"].Value != null)
                     {
                         // Lấy giá trị từ DataGridView
-                        string year = row.Cells["Year"].Value.ToString();
-                        decimal totalAmount = Convert.ToDecimal(row.Cells["TotalAmount"].Value);
+                        string year = row.Cells["Date"].Value.ToString();
+                        int totalAmount = int.Parse(row.Cells["TotalAmount"].Value.ToString());
 
                         // Thêm điểm dữ liệu vào series
                         series.Points.AddXY(year, totalAmount);
@@ -166,7 +168,7 @@ namespace WindowsFormsApp.View
 
                 // Cấu hình biểu đồ cho chế độ năm
                 chartStatistics.ChartAreas[0].AxisX.Title = "Năm";
-                chartStatistics.ChartAreas[0].AxisY.Title = "Tổng doanh thu";
+                chartStatistics.ChartAreas[0].AxisY.Title = "Doanh thu";
                 chartStatistics.ChartAreas[0].AxisX.Interval = 1;  // Đặt khoảng cách giữa các nhãn trên trục X
             }
         }

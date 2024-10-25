@@ -34,7 +34,6 @@ namespace WindowsFormsApp.View
                 {
                     var defaultStaff = new Staff
                     {
-                        Id = 1,
                         NameStaff = "Admin",
                         Address = "None",
                         Phone = "None",
@@ -49,20 +48,33 @@ namespace WindowsFormsApp.View
         {
             using (var context = new MyDbContext())
             {
-                if (!context.myUser.Any())
+                try
                 {
-                    var defaultUser = new User
+                    if (!context.myUser.Any())
                     {
-                        UserName = "admin",
-                        Password = CryptoLib.Encryptor.MD5Hash("admin"),
-                        Permision = "manager",
-                        IdStaff = 1
-                    };
-                    context.myUser.Add(defaultUser);
-                    context.SaveChanges();
+                        var defaultStaff = context.myStaff.FirstOrDefault(s => s.NameStaff == "Admin");
+                        if (defaultStaff != null)
+                        {
+                            var defaultUser = new User
+                            {
+                                UserName = "admin",
+                                Password = CryptoLib.Encryptor.MD5Hash("admin"),
+                                Permision = "manager",
+                                IdStaff = defaultStaff.Id
+                            };
+                            context.myUser.Add(defaultUser);
+                            context.SaveChanges();
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi khi thêm tài khoản người dùng mặc định: " + ex.Message);
                 }
             }
         }
+
+
 
         private bool AuthenticateUser(string username, string password)
         {
@@ -71,7 +83,7 @@ namespace WindowsFormsApp.View
                 var userToLogin = context.myUser.SingleOrDefault(r => r.UserName == username && r.Password == password);
                 if (userToLogin != null)
                 {
-                    UserIdLogin = int.Parse(userToLogin.ID.ToString());
+                    UserIdLogin = userToLogin.ID;
                     _permision = userToLogin.Permision.ToLower();
                     return true;
                 }
@@ -124,12 +136,14 @@ namespace WindowsFormsApp.View
 
         private void LoadSavedCredentials()
         {
-            if (!string.IsNullOrEmpty(Properties.Settings.Default.UserName))
+            if (!string.IsNullOrEmpty(Properties.Settings.Default.UserName) &&
+                !string.IsNullOrEmpty(Properties.Settings.Default.Password))
             {
                 txbUserName.Text = Properties.Settings.Default.UserName;
                 txbPassword.Text = Properties.Settings.Default.Password;
-            } 
+            }
         }
+
 
         private void ShowLoginError()
         {

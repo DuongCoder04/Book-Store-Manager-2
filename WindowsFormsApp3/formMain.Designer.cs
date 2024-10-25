@@ -28,8 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formMain));
             this.ribbonControl1 = new DevComponents.DotNetBar.RibbonControl();
             this.ribbonPanel2 = new DevComponents.DotNetBar.RibbonPanel();
+            this.ribbonBar2 = new DevComponents.DotNetBar.RibbonBar();
+            this.btnStatistics = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonBar3 = new DevComponents.DotNetBar.RibbonBar();
             this.btnReport = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonBar1 = new DevComponents.DotNetBar.RibbonBar();
@@ -64,8 +67,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.ribbonBar2 = new DevComponents.DotNetBar.RibbonBar();
-            this.btnStatistics = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonControl1.SuspendLayout();
             this.ribbonPanel2.SuspendLayout();
             this.ribbonPanel1.SuspendLayout();
@@ -96,6 +97,7 @@
             // 
             // ribbonPanel2
             // 
+            this.ribbonPanel2.CanvasColor = System.Drawing.Color.Transparent;
             this.ribbonPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.ribbonPanel2.Controls.Add(this.ribbonBar2);
             this.ribbonPanel2.Controls.Add(this.ribbonBar3);
@@ -107,27 +109,74 @@
             this.ribbonPanel2.Controls.Add(this.rbBook);
             this.ribbonPanel2.Controls.Add(this.rbCategory);
             this.ribbonPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ribbonPanel2.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.ribbonPanel2.Location = new System.Drawing.Point(0, 55);
             this.ribbonPanel2.Name = "ribbonPanel2";
             this.ribbonPanel2.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
             this.ribbonPanel2.Size = new System.Drawing.Size(1020, 97);
+            // 
+            // 
+            // 
+            this.ribbonPanel2.Style.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ribbonPanel2.Style.BackgroundImage")));
             this.ribbonPanel2.TabIndex = 2;
+            // 
+            // ribbonBar2
+            // 
+            this.ribbonBar2.AutoOverflowEnabled = true;
+            // 
+            // 
+            // 
+            this.ribbonBar2.BackgroundStyle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ribbonBar2.BackgroundStyle.BackgroundImage")));
+            this.ribbonBar2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.ribbonBar2.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.btnStatistics});
+            this.ribbonBar2.Location = new System.Drawing.Point(620, 0);
+            this.ribbonBar2.Name = "ribbonBar2";
+            this.ribbonBar2.Size = new System.Drawing.Size(90, 94);
+            this.ribbonBar2.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.ribbonBar2.TabIndex = 9;
+            this.ribbonBar2.Text = "Thống kê";
+            // 
+            // 
+            // 
+            this.ribbonBar2.TitleStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(69)))));
+            this.ribbonBar2.TitleStyle.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(69)))));
+            // 
+            // btnStatistics
+            // 
+            this.btnStatistics.ForeColor = System.Drawing.Color.Black;
+            this.btnStatistics.Image = ((System.Drawing.Image)(resources.GetObject("btnStatistics.Image")));
+            this.btnStatistics.ImagePaddingHorizontal = 8;
+            this.btnStatistics.Name = "btnStatistics";
+            this.btnStatistics.SubItemsExpandWidth = 14;
+            this.btnStatistics.Text = "Thống kê";
+            this.btnStatistics.Click += new System.EventHandler(this.btnStatistics_Click);
             // 
             // ribbonBar3
             // 
             this.ribbonBar3.AutoOverflowEnabled = true;
+            // 
+            // 
+            // 
+            this.ribbonBar3.BackgroundStyle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ribbonBar3.BackgroundStyle.BackgroundImage")));
             this.ribbonBar3.Dock = System.Windows.Forms.DockStyle.Left;
             this.ribbonBar3.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.btnReport});
-            this.ribbonBar3.Location = new System.Drawing.Point(504, 0);
+            this.ribbonBar3.Location = new System.Drawing.Point(530, 0);
             this.ribbonBar3.Name = "ribbonBar3";
-            this.ribbonBar3.Size = new System.Drawing.Size(100, 94);
+            this.ribbonBar3.Size = new System.Drawing.Size(90, 94);
             this.ribbonBar3.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.ribbonBar3.TabIndex = 8;
             this.ribbonBar3.Text = "Báo cáo";
             // 
+            // 
+            // 
+            this.ribbonBar3.TitleStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(69)))));
+            this.ribbonBar3.TitleStyle.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(69)))));
+            // 
             // btnReport
             // 
+            this.btnReport.Image = ((System.Drawing.Image)(resources.GetObject("btnReport.Image")));
             this.btnReport.ImagePaddingHorizontal = 8;
             this.btnReport.Name = "btnReport";
             this.btnReport.SubItemsExpandWidth = 14;
@@ -137,19 +186,28 @@
             // ribbonBar1
             // 
             this.ribbonBar1.AutoOverflowEnabled = true;
+            // 
+            // 
+            // 
+            this.ribbonBar1.BackgroundStyle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ribbonBar1.BackgroundStyle.BackgroundImage")));
             this.ribbonBar1.Dock = System.Windows.Forms.DockStyle.Left;
             this.ribbonBar1.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.btnCustomer});
             this.ribbonBar1.Location = new System.Drawing.Point(441, 0);
             this.ribbonBar1.Name = "ribbonBar1";
-            this.ribbonBar1.Size = new System.Drawing.Size(63, 94);
+            this.ribbonBar1.Size = new System.Drawing.Size(89, 94);
             this.ribbonBar1.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.ribbonBar1.TabIndex = 6;
             this.ribbonBar1.Text = "Khách hàng";
             // 
+            // 
+            // 
+            this.ribbonBar1.TitleStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(69)))));
+            this.ribbonBar1.TitleStyle.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(69)))));
+            // 
             // btnCustomer
             // 
-            this.btnCustomer.Image = global::WindowsFormsApp.Properties.Resources._1120619_businessman_client_man_manager_person_icon__Custom_;
+            this.btnCustomer.Image = ((System.Drawing.Image)(resources.GetObject("btnCustomer.Image")));
             this.btnCustomer.ImagePaddingHorizontal = 8;
             this.btnCustomer.Name = "btnCustomer";
             this.btnCustomer.SubItemsExpandWidth = 14;
@@ -159,6 +217,10 @@
             // rbBill
             // 
             this.rbBill.AutoOverflowEnabled = true;
+            // 
+            // 
+            // 
+            this.rbBill.BackgroundStyle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rbBill.BackgroundStyle.BackgroundImage")));
             this.rbBill.Dock = System.Windows.Forms.DockStyle.Left;
             this.rbBill.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.btnBill});
@@ -169,9 +231,14 @@
             this.rbBill.TabIndex = 5;
             this.rbBill.Text = "Hóa đơn";
             // 
+            // 
+            // 
+            this.rbBill.TitleStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(69)))));
+            this.rbBill.TitleStyle.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(69)))));
+            // 
             // btnBill
             // 
-            this.btnBill.Image = global::WindowsFormsApp.Properties.Resources.bill_6295902__Custom_;
+            this.btnBill.Image = ((System.Drawing.Image)(resources.GetObject("btnBill.Image")));
             this.btnBill.ImagePaddingHorizontal = 8;
             this.btnBill.Name = "btnBill";
             this.btnBill.SubItemsExpandWidth = 14;
@@ -181,6 +248,10 @@
             // rbPublisher
             // 
             this.rbPublisher.AutoOverflowEnabled = true;
+            // 
+            // 
+            // 
+            this.rbPublisher.BackgroundStyle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rbPublisher.BackgroundStyle.BackgroundImage")));
             this.rbPublisher.Dock = System.Windows.Forms.DockStyle.Left;
             this.rbPublisher.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.btnPublisher});
@@ -191,9 +262,14 @@
             this.rbPublisher.TabIndex = 4;
             this.rbPublisher.Text = "Nhà xuất bản";
             // 
+            // 
+            // 
+            this.rbPublisher.TitleStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(69)))));
+            this.rbPublisher.TitleStyle.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(69)))));
+            // 
             // btnPublisher
             // 
-            this.btnPublisher.Image = global::WindowsFormsApp.Properties.Resources.Publisher;
+            this.btnPublisher.Image = ((System.Drawing.Image)(resources.GetObject("btnPublisher.Image")));
             this.btnPublisher.ImagePaddingHorizontal = 8;
             this.btnPublisher.Name = "btnPublisher";
             this.btnPublisher.SubItemsExpandWidth = 14;
@@ -203,6 +279,10 @@
             // rbStaff
             // 
             this.rbStaff.AutoOverflowEnabled = true;
+            // 
+            // 
+            // 
+            this.rbStaff.BackgroundStyle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rbStaff.BackgroundStyle.BackgroundImage")));
             this.rbStaff.Dock = System.Windows.Forms.DockStyle.Left;
             this.rbStaff.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.btnStaff});
@@ -213,9 +293,14 @@
             this.rbStaff.TabIndex = 3;
             this.rbStaff.Text = "Nhân viên";
             // 
+            // 
+            // 
+            this.rbStaff.TitleStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(69)))));
+            this.rbStaff.TitleStyle.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(69)))));
+            // 
             // btnStaff
             // 
-            this.btnStaff.Image = global::WindowsFormsApp.Properties.Resources.Staff;
+            this.btnStaff.Image = ((System.Drawing.Image)(resources.GetObject("btnStaff.Image")));
             this.btnStaff.ImagePaddingHorizontal = 8;
             this.btnStaff.Name = "btnStaff";
             this.btnStaff.SubItemsExpandWidth = 14;
@@ -225,6 +310,10 @@
             // rbAuthors
             // 
             this.rbAuthors.AutoOverflowEnabled = true;
+            // 
+            // 
+            // 
+            this.rbAuthors.BackgroundStyle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rbAuthors.BackgroundStyle.BackgroundImage")));
             this.rbAuthors.Dock = System.Windows.Forms.DockStyle.Left;
             this.rbAuthors.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.btnAuthors});
@@ -235,9 +324,14 @@
             this.rbAuthors.TabIndex = 2;
             this.rbAuthors.Text = "Tác giả";
             // 
+            // 
+            // 
+            this.rbAuthors.TitleStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(69)))));
+            this.rbAuthors.TitleStyle.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(69)))));
+            // 
             // btnAuthors
             // 
-            this.btnAuthors.Image = global::WindowsFormsApp.Properties.Resources.Authors;
+            this.btnAuthors.Image = ((System.Drawing.Image)(resources.GetObject("btnAuthors.Image")));
             this.btnAuthors.ImagePaddingHorizontal = 8;
             this.btnAuthors.Name = "btnAuthors";
             this.btnAuthors.SubItemsExpandWidth = 14;
@@ -247,6 +341,10 @@
             // rbBook
             // 
             this.rbBook.AutoOverflowEnabled = true;
+            // 
+            // 
+            // 
+            this.rbBook.BackgroundStyle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rbBook.BackgroundStyle.BackgroundImage")));
             this.rbBook.Dock = System.Windows.Forms.DockStyle.Left;
             this.rbBook.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
             this.btnBook});
@@ -257,9 +355,14 @@
             this.rbBook.TabIndex = 1;
             this.rbBook.Text = "Sách";
             // 
+            // 
+            // 
+            this.rbBook.TitleStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(69)))));
+            this.rbBook.TitleStyle.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(69)))));
+            // 
             // btnBook
             // 
-            this.btnBook.Image = global::WindowsFormsApp.Properties.Resources.Book;
+            this.btnBook.Image = ((System.Drawing.Image)(resources.GetObject("btnBook.Image")));
             this.btnBook.ImagePaddingHorizontal = 8;
             this.btnBook.Name = "btnBook";
             this.btnBook.SubItemsExpandWidth = 14;
@@ -269,6 +372,10 @@
             // rbCategory
             // 
             this.rbCategory.AutoOverflowEnabled = true;
+            // 
+            // 
+            // 
+            this.rbCategory.BackgroundStyle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rbCategory.BackgroundStyle.BackgroundImage")));
             this.rbCategory.Dock = System.Windows.Forms.DockStyle.Left;
             this.rbCategory.ForeColor = System.Drawing.SystemColors.ControlText;
             this.rbCategory.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
@@ -280,9 +387,14 @@
             this.rbCategory.TabIndex = 0;
             this.rbCategory.Text = "Thể loại";
             // 
+            // 
+            // 
+            this.rbCategory.TitleStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(69)))));
+            this.rbCategory.TitleStyle.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(69)))));
+            // 
             // btnCategory
             // 
-            this.btnCategory.Image = global::WindowsFormsApp.Properties.Resources.Category_icon;
+            this.btnCategory.Image = ((System.Drawing.Image)(resources.GetObject("btnCategory.Image")));
             this.btnCategory.ImagePaddingHorizontal = 8;
             this.btnCategory.Name = "btnCategory";
             this.btnCategory.SubItemsExpandWidth = 14;
@@ -301,12 +413,20 @@
             this.ribbonPanel1.Name = "ribbonPanel1";
             this.ribbonPanel1.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
             this.ribbonPanel1.Size = new System.Drawing.Size(1020, 97);
+            // 
+            // 
+            // 
+            this.ribbonPanel1.Style.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ribbonPanel1.Style.BackgroundImage")));
             this.ribbonPanel1.TabIndex = 1;
             this.ribbonPanel1.Visible = false;
             // 
             // rbExit
             // 
             this.rbExit.AutoOverflowEnabled = true;
+            // 
+            // 
+            // 
+            this.rbExit.BackgroundStyle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rbExit.BackgroundStyle.BackgroundImage")));
             this.rbExit.Dock = System.Windows.Forms.DockStyle.Left;
             this.rbExit.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbExit.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
@@ -318,9 +438,14 @@
             this.rbExit.TabIndex = 3;
             this.rbExit.Text = "Thoát";
             // 
+            // 
+            // 
+            this.rbExit.TitleStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(69)))));
+            this.rbExit.TitleStyle.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(69)))));
+            // 
             // btnExit
             // 
-            this.btnExit.Image = global::WindowsFormsApp.Properties.Resources.close_1828666__Custom_;
+            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.ImagePaddingHorizontal = 8;
             this.btnExit.Name = "btnExit";
             this.btnExit.SubItemsExpandWidth = 14;
@@ -330,6 +455,10 @@
             // rbUser
             // 
             this.rbUser.AutoOverflowEnabled = true;
+            // 
+            // 
+            // 
+            this.rbUser.BackgroundStyle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rbUser.BackgroundStyle.BackgroundImage")));
             this.rbUser.Dock = System.Windows.Forms.DockStyle.Left;
             this.rbUser.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbUser.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
@@ -341,9 +470,14 @@
             this.rbUser.TabIndex = 2;
             this.rbUser.Text = "Người dùng";
             // 
+            // 
+            // 
+            this.rbUser.TitleStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(69)))));
+            this.rbUser.TitleStyle.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(69)))));
+            // 
             // btnUser
             // 
-            this.btnUser.Image = global::WindowsFormsApp.Properties.Resources.user_149071__Custom_;
+            this.btnUser.Image = ((System.Drawing.Image)(resources.GetObject("btnUser.Image")));
             this.btnUser.ImagePaddingHorizontal = 8;
             this.btnUser.Name = "btnUser";
             this.btnUser.SubItemsExpandWidth = 14;
@@ -353,6 +487,10 @@
             // rbChangePass
             // 
             this.rbChangePass.AutoOverflowEnabled = true;
+            // 
+            // 
+            // 
+            this.rbChangePass.BackgroundStyle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rbChangePass.BackgroundStyle.BackgroundImage")));
             this.rbChangePass.Dock = System.Windows.Forms.DockStyle.Left;
             this.rbChangePass.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbChangePass.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
@@ -364,9 +502,14 @@
             this.rbChangePass.TabIndex = 1;
             this.rbChangePass.Text = "Đổi mật khẩu";
             // 
+            // 
+            // 
+            this.rbChangePass.TitleStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(69)))));
+            this.rbChangePass.TitleStyle.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(69)))));
+            // 
             // btnChangePW
             // 
-            this.btnChangePW.Image = global::WindowsFormsApp.Properties.Resources.password_13222412__Custom_;
+            this.btnChangePW.Image = ((System.Drawing.Image)(resources.GetObject("btnChangePW.Image")));
             this.btnChangePW.ImagePaddingHorizontal = 8;
             this.btnChangePW.Name = "btnChangePW";
             this.btnChangePW.SubItemsExpandWidth = 14;
@@ -376,6 +519,10 @@
             // rbLogout
             // 
             this.rbLogout.AutoOverflowEnabled = true;
+            // 
+            // 
+            // 
+            this.rbLogout.BackgroundStyle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("rbLogout.BackgroundStyle.BackgroundImage")));
             this.rbLogout.Dock = System.Windows.Forms.DockStyle.Left;
             this.rbLogout.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbLogout.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
@@ -387,9 +534,14 @@
             this.rbLogout.TabIndex = 0;
             this.rbLogout.Text = "Đăng xuất";
             // 
+            // 
+            // 
+            this.rbLogout.TitleStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(69)))));
+            this.rbLogout.TitleStyle.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(13)))), ((int)(((byte)(69)))));
+            // 
             // btnLogout
             // 
-            this.btnLogout.Image = global::WindowsFormsApp.Properties.Resources.Logout;
+            this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
             this.btnLogout.ImagePaddingHorizontal = 8;
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.SubItemsExpandWidth = 14;
@@ -410,6 +562,7 @@
             this.ribbonTabItem2.Name = "ribbonTabItem2";
             this.ribbonTabItem2.Panel = this.ribbonPanel2;
             this.ribbonTabItem2.Text = "Danh mục";
+            this.ribbonTabItem2.Click += new System.EventHandler(this.ribbonTabItem2_Click);
             // 
             // qatCustomizeItem1
             // 
@@ -487,32 +640,12 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Phần Mềm Quản Lý Cửa Hàng Sách\r\n";
             // 
-            // ribbonBar2
-            // 
-            this.ribbonBar2.AutoOverflowEnabled = true;
-            this.ribbonBar2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.ribbonBar2.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.btnStatistics});
-            this.ribbonBar2.Location = new System.Drawing.Point(604, 0);
-            this.ribbonBar2.Name = "ribbonBar2";
-            this.ribbonBar2.Size = new System.Drawing.Size(100, 94);
-            this.ribbonBar2.Style = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.ribbonBar2.TabIndex = 9;
-            this.ribbonBar2.Text = "Thống kê";
-            // 
-            // btnStatistics
-            // 
-            this.btnStatistics.ImagePaddingHorizontal = 8;
-            this.btnStatistics.Name = "btnStatistics";
-            this.btnStatistics.SubItemsExpandWidth = 14;
-            this.btnStatistics.Text = "Thống kê";
-            this.btnStatistics.Click += new System.EventHandler(this.btnStatistics_Click);
-            // 
             // formMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::WindowsFormsApp.Properties.Resources._5328260;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(125)))), ((int)(((byte)(125)))));
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1028, 686);
             this.Controls.Add(this.label5);

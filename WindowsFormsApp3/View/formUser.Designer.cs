@@ -71,9 +71,11 @@
             this.buttonItem1 = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonTabItem1 = new DevComponents.DotNetBar.RibbonTabItem();
             this.btnExit = new DevComponents.DotNetBar.ButtonX();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUser)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -91,39 +93,35 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.btnUpdate);
-            this.panel2.Controls.Add(this.btnReload);
-            this.panel2.Controls.Add(this.btnDelete);
-            this.panel2.Controls.Add(this.btnAdd);
-            this.panel2.Location = new System.Drawing.Point(482, 89);
+            this.panel2.Location = new System.Drawing.Point(12, 66);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(349, 516);
+            this.panel2.Size = new System.Drawing.Size(631, 121);
             this.panel2.TabIndex = 5;
             // 
             // cbStaff
             // 
             this.cbStaff.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.cbStaff.FormattingEnabled = true;
-            this.cbStaff.Location = new System.Drawing.Point(20, 239);
+            this.cbStaff.Location = new System.Drawing.Point(20, 86);
             this.cbStaff.Name = "cbStaff";
-            this.cbStaff.Size = new System.Drawing.Size(309, 28);
+            this.cbStaff.Size = new System.Drawing.Size(181, 28);
             this.cbStaff.TabIndex = 10;
             // 
             // txbSearch
             // 
             this.txbSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbSearch.Location = new System.Drawing.Point(21, 294);
+            this.txbSearch.Location = new System.Drawing.Point(408, 86);
             this.txbSearch.Name = "txbSearch";
-            this.txbSearch.Size = new System.Drawing.Size(309, 26);
+            this.txbSearch.Size = new System.Drawing.Size(207, 26);
             this.txbSearch.TabIndex = 4;
             this.txbSearch.TextChanged += new System.EventHandler(this.txbSearch_TextChanged);
             // 
             // txbPermision
             // 
             this.txbPermision.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbPermision.Location = new System.Drawing.Point(20, 190);
+            this.txbPermision.Location = new System.Drawing.Point(408, 35);
             this.txbPermision.Name = "txbPermision";
-            this.txbPermision.Size = new System.Drawing.Size(309, 26);
+            this.txbPermision.Size = new System.Drawing.Size(207, 26);
             this.txbPermision.TabIndex = 3;
             // 
             // label5
@@ -131,8 +129,8 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(197)))));
-            this.label5.Location = new System.Drawing.Point(17, 272);
+            this.label5.ForeColor = System.Drawing.Color.Teal;
+            this.label5.Location = new System.Drawing.Point(404, 64);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(85, 19);
             this.label5.TabIndex = 1;
@@ -141,9 +139,9 @@
             // txbPassword
             // 
             this.txbPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbPassword.Location = new System.Drawing.Point(20, 139);
+            this.txbPassword.Location = new System.Drawing.Point(210, 87);
             this.txbPassword.Name = "txbPassword";
-            this.txbPassword.Size = new System.Drawing.Size(309, 26);
+            this.txbPassword.Size = new System.Drawing.Size(189, 26);
             this.txbPassword.TabIndex = 2;
             // 
             // label6
@@ -151,8 +149,8 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(197)))));
-            this.label6.Location = new System.Drawing.Point(20, 219);
+            this.label6.ForeColor = System.Drawing.Color.Teal;
+            this.label6.Location = new System.Drawing.Point(20, 66);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(90, 19);
             this.label6.TabIndex = 1;
@@ -163,8 +161,8 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(197)))));
-            this.label4.Location = new System.Drawing.Point(17, 168);
+            this.label4.ForeColor = System.Drawing.Color.Teal;
+            this.label4.Location = new System.Drawing.Point(405, 13);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(104, 19);
             this.label4.TabIndex = 1;
@@ -176,15 +174,15 @@
             this.txbIdUser.Location = new System.Drawing.Point(20, 37);
             this.txbIdUser.Name = "txbIdUser";
             this.txbIdUser.ReadOnly = true;
-            this.txbIdUser.Size = new System.Drawing.Size(309, 26);
+            this.txbIdUser.Size = new System.Drawing.Size(181, 26);
             this.txbIdUser.TabIndex = 0;
             // 
             // txbNameUser
             // 
             this.txbNameUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbNameUser.Location = new System.Drawing.Point(20, 88);
+            this.txbNameUser.Location = new System.Drawing.Point(210, 36);
             this.txbNameUser.Name = "txbNameUser";
-            this.txbNameUser.Size = new System.Drawing.Size(309, 26);
+            this.txbNameUser.Size = new System.Drawing.Size(189, 26);
             this.txbNameUser.TabIndex = 1;
             // 
             // label1
@@ -192,7 +190,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(197)))));
+            this.label1.ForeColor = System.Drawing.Color.Teal;
             this.label1.Location = new System.Drawing.Point(20, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(131, 19);
@@ -204,8 +202,8 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(197)))));
-            this.label3.Location = new System.Drawing.Point(17, 117);
+            this.label3.ForeColor = System.Drawing.Color.Teal;
+            this.label3.Location = new System.Drawing.Point(207, 65);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 19);
             this.label3.TabIndex = 1;
@@ -216,8 +214,8 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(197)))));
-            this.label2.Location = new System.Drawing.Point(16, 66);
+            this.label2.ForeColor = System.Drawing.Color.Teal;
+            this.label2.Location = new System.Drawing.Point(206, 14);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(138, 19);
             this.label2.TabIndex = 1;
@@ -227,7 +225,8 @@
             // 
             this.btnUpdate.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnUpdate.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Location = new System.Drawing.Point(202, 379);
+            this.btnUpdate.ForeColor = System.Drawing.Color.Teal;
+            this.btnUpdate.Location = new System.Drawing.Point(3, 64);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(128, 55);
             this.btnUpdate.TabIndex = 6;
@@ -238,7 +237,8 @@
             // 
             this.btnReload.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnReload.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReload.Location = new System.Drawing.Point(202, 440);
+            this.btnReload.ForeColor = System.Drawing.Color.Teal;
+            this.btnReload.Location = new System.Drawing.Point(3, 186);
             this.btnReload.Name = "btnReload";
             this.btnReload.Size = new System.Drawing.Size(128, 55);
             this.btnReload.TabIndex = 9;
@@ -249,7 +249,8 @@
             // 
             this.btnDelete.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnDelete.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(20, 440);
+            this.btnDelete.ForeColor = System.Drawing.Color.Teal;
+            this.btnDelete.Location = new System.Drawing.Point(3, 125);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(128, 55);
             this.btnDelete.TabIndex = 7;
@@ -260,7 +261,8 @@
             // 
             this.btnAdd.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnAdd.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(20, 379);
+            this.btnAdd.ForeColor = System.Drawing.Color.Teal;
+            this.btnAdd.Location = new System.Drawing.Point(3, 3);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(128, 55);
             this.btnAdd.TabIndex = 5;
@@ -282,17 +284,17 @@
             this.dataGridViewUser.DefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewUser.Location = new System.Drawing.Point(4, 4);
             this.dataGridViewUser.Name = "dataGridViewUser";
-            this.dataGridViewUser.Size = new System.Drawing.Size(445, 510);
+            this.dataGridViewUser.Size = new System.Drawing.Size(481, 382);
             this.dataGridViewUser.TabIndex = 0;
             this.dataGridViewUser.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewUser_CellClick);
             // 
             // reflectionLabel1
             // 
             this.reflectionLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.reflectionLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(197)))));
+            this.reflectionLabel1.ForeColor = System.Drawing.Color.Teal;
             this.reflectionLabel1.Location = new System.Drawing.Point(16, 13);
             this.reflectionLabel1.Name = "reflectionLabel1";
-            this.reflectionLabel1.Size = new System.Drawing.Size(348, 70);
+            this.reflectionLabel1.Size = new System.Drawing.Size(348, 47);
             this.reflectionLabel1.TabIndex = 6;
             this.reflectionLabel1.Text = "<b><font size=\"+20\">Quản lý<font color=\"#B02B2C\"> người dùng</font></font></b>";
             // 
@@ -300,9 +302,9 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.dataGridViewUser);
-            this.panel1.Location = new System.Drawing.Point(16, 89);
+            this.panel1.Location = new System.Drawing.Point(12, 193);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(458, 516);
+            this.panel1.Size = new System.Drawing.Size(488, 392);
             this.panel1.TabIndex = 4;
             // 
             // itemContainer1
@@ -513,27 +515,40 @@
             this.btnExit.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnExit.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Location = new System.Drawing.Point(721, 31);
+            this.btnExit.ForeColor = System.Drawing.Color.Teal;
+            this.btnExit.Location = new System.Drawing.Point(3, 330);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(91, 34);
+            this.btnExit.Size = new System.Drawing.Size(128, 55);
             this.btnExit.TabIndex = 10;
             this.btnExit.Text = "Trở về";
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.btnAdd);
+            this.panel3.Controls.Add(this.btnUpdate);
+            this.panel3.Controls.Add(this.btnDelete);
+            this.panel3.Controls.Add(this.btnReload);
+            this.panel3.Controls.Add(this.btnExit);
+            this.panel3.Location = new System.Drawing.Point(506, 194);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(137, 391);
+            this.panel3.TabIndex = 11;
             // 
             // formUser
             // 
             this.AcceptButton = this.btnAdd;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = global::WindowsFormsApp.Properties.Resources._42833;
+            this.BackColor = System.Drawing.Color.PapayaWhip;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CancelButton = this.btnExit;
-            this.ClientSize = new System.Drawing.Size(847, 620);
+            this.ClientSize = new System.Drawing.Size(661, 606);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.reflectionLabel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.btnExit);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "formUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "formUser";
@@ -542,6 +557,7 @@
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUser)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -590,5 +606,6 @@
         private DevComponents.DotNetBar.RibbonTabItem ribbonTabItem1;
         private System.Windows.Forms.ComboBox cbStaff;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Panel panel3;
     }
 }

@@ -120,6 +120,12 @@ namespace WindowsFormsApp
         {
             OpenForm<formSalesStatistics>();
         }
+
+        private void ribbonTabItem2_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
 

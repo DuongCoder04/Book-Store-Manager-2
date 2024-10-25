@@ -8,10 +8,11 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>WindowsFormsApp</RootNamespace>
     <AssemblyName>WindowsFormsApp</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -71,6 +72,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dsBillDetails.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DataSet\dsBook.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsBook.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DataSet\dsSalesReport.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -98,6 +104,11 @@
     <Compile Include="Models\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Report\crNewReport.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -202,14 +213,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Report\crNewReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>crNewReport.cs</LastGenOutput>
@@ -271,6 +277,17 @@
     <None Include="DataSet\dsBillDetails.xss">
       <DependentUpon>dsBillDetails.xsd</DependentUpon>
     </None>
+    <None Include="DataSet\dsBook.xsc">
+      <DependentUpon>dsBook.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet\dsBook.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsBook.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet\dsBook.xss">
+      <DependentUpon>dsBook.xsd</DependentUpon>
+    </None>
     <None Include="DataSet\dsSalesReport.xsc">
       <DependentUpon>dsSalesReport.xsd</DependentUpon>
     </None>
@@ -307,113 +324,10 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Category_icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Book.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Authors.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Staff.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Publisher.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Logout.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Setting.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\circle_14025467 %28Custom%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pencil_13424065 %28Custom%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\delete_6861362 %28Custom%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\arrow_14035318 %28Custom%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\undo %28Custom%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\search_14440839 %28Custom%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\old-books-436498.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\user_3237472.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\right-arrow_556690.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\right-arrow_556690 %28Custom%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\arrow-right_9847468 %28Custom%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pexels-meruyert-gonullu-7244321.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pexels-fariphotography-964547.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pexels-fariphotography-964547 %281%29.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pexels-hissetmehurriyeti-47135946-8519443.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pexels-hissetmehurriyeti-47135946-8519443 %28Custom%29.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\password_13222412 %28Custom%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\user_149071 %28Custom%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\close_1828666 %28Custom%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\user_149071.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bill_6295902 %28Custom%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\5328260.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\42833.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\5447769.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pattern-5649403_1280.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\6294140.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\hide_12237345.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\1120619_businessman_client_man_manager_person_icon %28Custom%29.png" />
-  </ItemGroup>
-  <ItemGroup />
-  <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

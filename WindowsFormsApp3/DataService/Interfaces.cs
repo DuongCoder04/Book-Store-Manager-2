@@ -85,7 +85,7 @@ namespace WindowsFormsApp.DataService
     }
     public interface IBillRepository : IRepository<Bill> { }
     public interface IBillDetailRepository : IRepository<BillDetail> { }
-    public interface IUnitOfWork : IDisposable 
+    public interface IUnitOfWork : IDisposable
     {
 
         IBillRepository Bill { get; }

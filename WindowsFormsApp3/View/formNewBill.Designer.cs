@@ -43,7 +43,6 @@
             this.dataGridViewBooks = new System.Windows.Forms.DataGridView();
             this.dataGridViewBills = new System.Windows.Forms.DataGridView();
             this.dataGridViewBillDetails = new System.Windows.Forms.DataGridView();
-            this.cbUpdateDateSell = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
             this.btnAddBillDetail = new System.Windows.Forms.Button();
             this.btnRemoveBillDetail = new System.Windows.Forms.Button();
@@ -76,9 +75,9 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(130)))), ((int)(((byte)(137)))));
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(197)))));
+            this.label5.ForeColor = System.Drawing.Color.Teal;
             this.label5.Location = new System.Drawing.Point(12, 24);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(109, 19);
@@ -128,9 +127,9 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(130)))), ((int)(((byte)(137)))));
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(197)))));
+            this.label4.ForeColor = System.Drawing.Color.Teal;
             this.label4.Location = new System.Drawing.Point(251, 52);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(86, 19);
@@ -148,9 +147,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(130)))), ((int)(((byte)(137)))));
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(197)))));
+            this.label1.ForeColor = System.Drawing.Color.Teal;
             this.label1.Location = new System.Drawing.Point(12, 83);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(93, 19);
@@ -160,9 +159,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(130)))), ((int)(((byte)(137)))));
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(197)))));
+            this.label2.ForeColor = System.Drawing.Color.Teal;
             this.label2.Location = new System.Drawing.Point(251, 81);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(108, 19);
@@ -172,9 +171,9 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(130)))), ((int)(((byte)(137)))));
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(197)))));
+            this.label3.ForeColor = System.Drawing.Color.Teal;
             this.label3.Location = new System.Drawing.Point(12, 54);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(109, 19);
@@ -184,17 +183,19 @@
             // btnInsert
             // 
             this.btnInsert.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnInsert.ForeColor = System.Drawing.Color.Teal;
             this.btnInsert.Location = new System.Drawing.Point(398, 109);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(75, 32);
             this.btnInsert.TabIndex = 21;
             this.btnInsert.Text = "Thêm HD";
             this.btnInsert.UseVisualStyleBackColor = true;
-            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
+            this.btnInsert.Click += new System.EventHandler(this.btnAddBill_Click);
             // 
             // btnUpdate
             // 
             this.btnUpdate.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnUpdate.ForeColor = System.Drawing.Color.Teal;
             this.btnUpdate.Location = new System.Drawing.Point(398, 147);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 32);
@@ -206,6 +207,7 @@
             // btnViewBill
             // 
             this.btnViewBill.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnViewBill.ForeColor = System.Drawing.Color.Teal;
             this.btnViewBill.Location = new System.Drawing.Point(398, 222);
             this.btnViewBill.Name = "btnViewBill";
             this.btnViewBill.Size = new System.Drawing.Size(75, 32);
@@ -217,6 +219,7 @@
             // btnExit
             // 
             this.btnExit.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnExit.ForeColor = System.Drawing.Color.Teal;
             this.btnExit.Location = new System.Drawing.Point(398, 297);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 31);
@@ -232,6 +235,7 @@
             this.dataGridViewBooks.Name = "dataGridViewBooks";
             this.dataGridViewBooks.Size = new System.Drawing.Size(378, 449);
             this.dataGridViewBooks.TabIndex = 22;
+            this.dataGridViewBooks.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewBooks_CellClick);
             // 
             // dataGridViewBills
             // 
@@ -250,22 +254,12 @@
             this.dataGridViewBillDetails.Size = new System.Drawing.Size(418, 239);
             this.dataGridViewBillDetails.TabIndex = 22;
             // 
-            // cbUpdateDateSell
-            // 
-            this.cbUpdateDateSell.AutoSize = true;
-            this.cbUpdateDateSell.Location = new System.Drawing.Point(481, 28);
-            this.cbUpdateDateSell.Name = "cbUpdateDateSell";
-            this.cbUpdateDateSell.Size = new System.Drawing.Size(116, 17);
-            this.cbUpdateDateSell.TabIndex = 23;
-            this.cbUpdateDateSell.Text = "Cập nhật ngày bán";
-            this.cbUpdateDateSell.UseVisualStyleBackColor = true;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(130)))), ((int)(((byte)(137)))));
+            this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(227)))), ((int)(((byte)(197)))));
+            this.label6.ForeColor = System.Drawing.Color.Teal;
             this.label6.Location = new System.Drawing.Point(603, 28);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(91, 19);
@@ -275,17 +269,19 @@
             // btnAddBillDetail
             // 
             this.btnAddBillDetail.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnAddBillDetail.ForeColor = System.Drawing.Color.Teal;
             this.btnAddBillDetail.Location = new System.Drawing.Point(396, 417);
             this.btnAddBillDetail.Name = "btnAddBillDetail";
             this.btnAddBillDetail.Size = new System.Drawing.Size(77, 43);
             this.btnAddBillDetail.TabIndex = 24;
             this.btnAddBillDetail.Text = ">";
             this.btnAddBillDetail.UseVisualStyleBackColor = true;
-            this.btnAddBillDetail.Click += new System.EventHandler(this.btnAddBillDetail_Click);
+            this.btnAddBillDetail.Click += new System.EventHandler(this.btnAddBook_Click);
             // 
             // btnRemoveBillDetail
             // 
             this.btnRemoveBillDetail.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnRemoveBillDetail.ForeColor = System.Drawing.Color.Teal;
             this.btnRemoveBillDetail.Location = new System.Drawing.Point(396, 466);
             this.btnRemoveBillDetail.Name = "btnRemoveBillDetail";
             this.btnRemoveBillDetail.Size = new System.Drawing.Size(77, 43);
@@ -297,6 +293,7 @@
             // btnRemoveAll
             // 
             this.btnRemoveAll.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnRemoveAll.ForeColor = System.Drawing.Color.Teal;
             this.btnRemoveAll.Location = new System.Drawing.Point(396, 515);
             this.btnRemoveAll.Name = "btnRemoveAll";
             this.btnRemoveAll.Size = new System.Drawing.Size(77, 43);
@@ -347,6 +344,8 @@
             // 
             // btnFind
             // 
+            this.btnFind.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnFind.ForeColor = System.Drawing.Color.Teal;
             this.btnFind.Location = new System.Drawing.Point(824, 22);
             this.btnFind.Name = "btnFind";
             this.btnFind.Size = new System.Drawing.Size(75, 25);
@@ -366,6 +365,7 @@
             // btnDelete
             // 
             this.btnDelete.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnDelete.ForeColor = System.Drawing.Color.Teal;
             this.btnDelete.Location = new System.Drawing.Point(398, 185);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 31);
@@ -377,6 +377,7 @@
             // btnReload
             // 
             this.btnReload.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnReload.ForeColor = System.Drawing.Color.Teal;
             this.btnReload.Location = new System.Drawing.Point(398, 260);
             this.btnReload.Name = "btnReload";
             this.btnReload.Size = new System.Drawing.Size(75, 31);
@@ -436,6 +437,7 @@
             0,
             0,
             0});
+            this.nmQuantity.ValueChanged += new System.EventHandler(this.nmQuantity_ValueChanged);
             // 
             // formNewBill
             // 
@@ -447,7 +449,6 @@
             this.Controls.Add(this.btnRemoveAll);
             this.Controls.Add(this.btnRemoveBillDetail);
             this.Controls.Add(this.btnAddBillDetail);
-            this.Controls.Add(this.cbUpdateDateSell);
             this.Controls.Add(this.dataGridViewBillDetails);
             this.Controls.Add(this.dataGridViewBills);
             this.Controls.Add(this.dataGridViewBooks);
@@ -501,7 +502,6 @@
         private System.Windows.Forms.DataGridView dataGridViewBooks;
         private System.Windows.Forms.DataGridView dataGridViewBills;
         private System.Windows.Forms.DataGridView dataGridViewBillDetails;
-        private System.Windows.Forms.CheckBox cbUpdateDateSell;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnAddBillDetail;
         private System.Windows.Forms.Button btnRemoveBillDetail;

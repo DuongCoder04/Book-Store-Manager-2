@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formLogin));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnShowp = new DevComponents.DotNetBar.ButtonX();
             this.btnExit = new DevComponents.DotNetBar.ButtonX();
@@ -62,7 +63,7 @@
             // btnShowp
             // 
             this.btnShowp.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnShowp.Image = global::WindowsFormsApp.Properties.Resources.hide_12237345;
+            this.btnShowp.Image = ((System.Drawing.Image)(resources.GetObject("btnShowp.Image")));
             this.btnShowp.ImageFixedSize = new System.Drawing.Size(20, 20);
             this.btnShowp.Location = new System.Drawing.Point(269, 231);
             this.btnShowp.Name = "btnShowp";
@@ -97,11 +98,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Tahoma", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(208)))), ((int)(((byte)(147)))));
             this.label3.Location = new System.Drawing.Point(25, 18);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(261, 55);
+            this.label3.Size = new System.Drawing.Size(259, 58);
             this.label3.TabIndex = 6;
             this.label3.Text = "Đăng nhập";
             // 
@@ -167,7 +168,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.BackgroundImage = global::WindowsFormsApp.Properties.Resources._5447769;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(620, 414);
