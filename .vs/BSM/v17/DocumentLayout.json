@@ -3,47 +3,8 @@
   "WorkspaceRootPath": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formnewbill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formnewbill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formnewbill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formnewbill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formcategory.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formcategory.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|e:\\workspace\\c#\\bookman\\book-store-manager-main\\windowsformsapp3\\view\\formcustomer.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formcustomer.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|WindownsFormsApp||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formviewsalesreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|e:\\workspace\\c#\\bookman\\book-store-manager-main\\windowsformsapp3\\view\\formviewsalesreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formviewsalesreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formstaff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -62,24 +23,107 @@
       "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formreportbills.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formpublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formpublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formnewbill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formnewbill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formnewbill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formnewbill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formauthors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formauthors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formchangepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formchangepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formchangepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formchangepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formpublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formpublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formpublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formpublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formsalesreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formsalesreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formsalesstatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formsalesstatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formstaff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formstaff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formcategory.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formcategory.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formcustomer.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formcustomer.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\properties\\resources.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|WindownsFormsApp||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formauthors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -98,20 +142,12 @@
       "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\formmain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formuser.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formuser.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formstaff.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formstaff.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formpublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formpublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formauthors.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -134,16 +170,8 @@
       "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formlogin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formsalesreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formsalesreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\report\\crsalesreport.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}",
       "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\report\\crsalesreport.rpt||{C0EF7560-990E-4D61-B970-65A6096B6866}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formsalesstatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formsalesstatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formsalesstatistics.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -152,10 +180,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\dataset\\dsbook.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
       "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\dataset\\dsbook.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formbook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\dataset\\dsbilldetails.xsd||{07AC752B-D2B0-4DCD-AD9C-237BF561A30A}",
@@ -172,14 +196,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\models\\billdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\models\\billdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\models\\bill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -210,28 +226,12 @@
       "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\dataservice\\cryptolib.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formauthors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formauthors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}",
       "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\properties\\settings.settings||{6D2695F9-5365-4A78-89ED-F205C045BFE6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formviewsalesreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formviewsalesreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formstaff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formstaff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formchangepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formchangepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\view\\formcustomer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\view\\formreportbills.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -256,10 +256,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\windowsformsapp3\\dataset\\dsbilldetails.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\dataset\\dsbilldetails.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|e:\\workspace\\c#\\bookman\\book-store-manager-main\\windowsformsapp3\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
-      "RelativeMoniker": "D:0:0:{E0750190-0C46-46EA-82AA-D82A1E003810}|WindowsFormsApp3\\WindownsFormsApp.csproj|solutionrelative:windowsformsapp3\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     }
   ],
   "DocumentGroupContainers": [
@@ -269,62 +265,315 @@
       "DocumentGroups": [
         {
           "DockedHeight": 170,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "formCustomer.Designer.cs",
-              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formCustomer.Designer.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formCustomer.Designer.cs",
-              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formCustomer.Designer.cs",
-              "RelativeToolTip": "WindowsFormsApp3\\View\\formCustomer.Designer.cs",
-              "ViewState": "AgIAAM8AAAAAAAAAAAAowNcAAABCAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "formViewSalesReport.cs [Design]",
+              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formViewSalesReport.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formViewSalesReport.cs",
+              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formViewSalesReport.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp3\\View\\formViewSalesReport.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T03:15:30.257Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T03:06:14.908Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "formCustomer.cs [Design]",
+              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formCustomer.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formCustomer.cs",
+              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formCustomer.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp3\\View\\formCustomer.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T03:04:59.421Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "formReportBills.cs [Design]",
+              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formReportBills.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formReportBills.cs",
+              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formReportBills.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp3\\View\\formReportBills.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T03:04:24.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "formSalesReport.cs [Design]",
+              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formSalesReport.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formSalesReport.cs",
+              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formSalesReport.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp3\\View\\formSalesReport.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T03:03:04.183Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "formSalesStatistics.cs [Design]",
+              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formSalesStatistics.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formSalesStatistics.cs",
+              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formSalesStatistics.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp3\\View\\formSalesStatistics.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T00:55:34.095Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "formStaff.cs [Design]",
+              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formStaff.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formStaff.cs",
+              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formStaff.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp3\\View\\formStaff.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T03:03:54.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "formMain.cs [Design]",
+              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\formMain.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp3\\formMain.cs",
+              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\formMain.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp3\\formMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T03:07:54.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "formNewBill.cs",
               "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formNewBill.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formNewBill.cs",
               "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formNewBill.cs",
               "RelativeToolTip": "WindowsFormsApp3\\View\\formNewBill.cs",
-              "ViewState": "AgIAANkAAAAAAAAAAAAjwOcAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAGYCAAAAAAAAAAAWwG4CAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T17:07:26.165Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-13T17:07:26.165Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "formCategory.cs [Design]",
+              "DocumentIndex": 8,
+              "Title": "formNewBill.cs [Design]",
+              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formNewBill.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formNewBill.cs",
+              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formNewBill.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp3\\View\\formNewBill.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T00:56:01.431Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "formBook.cs",
+              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formBook.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formBook.cs",
+              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formBook.cs",
+              "RelativeToolTip": "WindowsFormsApp3\\View\\formBook.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAN0AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T01:54:18.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "formBook.cs [Design]",
+              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formBook.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formBook.cs",
+              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formBook.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp3\\View\\formBook.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T03:05:06.111Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "formCategory.cs",
               "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formCategory.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formCategory.cs",
-              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formCategory.cs [Design]",
-              "RelativeToolTip": "WindowsFormsApp3\\View\\formCategory.cs [Design]",
+              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formCategory.cs",
+              "RelativeToolTip": "WindowsFormsApp3\\View\\formCategory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T03:05:02.39Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-15T01:27:54.063Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "formCategory.Designer.cs",
-              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formCategory.Designer.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formCategory.Designer.cs",
-              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formCategory.Designer.cs",
-              "RelativeToolTip": "WindowsFormsApp3\\View\\formCategory.Designer.cs",
-              "ViewState": "AgIAAPEAAAAAAAAAAAAAAMsAAABAAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "formCustomer.cs",
+              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formCustomer.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formCustomer.cs",
+              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formCustomer.cs",
+              "RelativeToolTip": "WindowsFormsApp3\\View\\formCustomer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-25T00:24:53.608Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T01:27:56.944Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 14,
+              "Title": "formChangePassword.cs",
+              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formChangePassword.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formChangePassword.cs",
+              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formChangePassword.cs",
+              "RelativeToolTip": "WindowsFormsApp3\\View\\formChangePassword.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T01:27:59.355Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "formAuthors.cs",
+              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formAuthors.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formAuthors.cs",
+              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formAuthors.cs",
+              "RelativeToolTip": "WindowsFormsApp3\\View\\formAuthors.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowCQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T01:53:51.534Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "formChangePassword.cs [Design]",
+              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formChangePassword.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formChangePassword.cs",
+              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formChangePassword.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp3\\View\\formChangePassword.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T03:04:57.045Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "formLogin.cs",
+              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formLogin.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formLogin.cs",
+              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formLogin.cs",
+              "RelativeToolTip": "WindowsFormsApp3\\View\\formLogin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T01:28:01.875Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "formLogin.cs [Design]",
+              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formLogin.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formLogin.cs",
+              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formLogin.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp3\\View\\formLogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T03:04:55.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "formPublisher.cs",
+              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formPublisher.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formPublisher.cs",
+              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formPublisher.cs",
+              "RelativeToolTip": "WindowsFormsApp3\\View\\formPublisher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T01:28:06.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "formPublisher.cs [Design]",
+              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formPublisher.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formPublisher.cs",
+              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formPublisher.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp3\\View\\formPublisher.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T03:04:19.525Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "formSalesReport.cs",
+              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formSalesReport.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formSalesReport.cs",
+              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formSalesReport.cs",
+              "RelativeToolTip": "WindowsFormsApp3\\View\\formSalesReport.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T03:07:53.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "formSalesStatistics.cs",
+              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formSalesStatistics.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formSalesStatistics.cs",
+              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formSalesStatistics.cs",
+              "RelativeToolTip": "WindowsFormsApp3\\View\\formSalesStatistics.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T01:03:19.012Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "formStaff.cs",
+              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formStaff.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formStaff.cs",
+              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formStaff.cs",
+              "RelativeToolTip": "WindowsFormsApp3\\View\\formStaff.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T01:28:12.29Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "formUser.cs",
+              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formUser.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formUser.cs",
+              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formUser.cs",
+              "RelativeToolTip": "WindowsFormsApp3\\View\\formUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T01:27:06.16Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "formUser.cs [Design]",
+              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formUser.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formUser.cs",
+              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formUser.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp3\\View\\formUser.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T03:03:36.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "formMain.cs",
+              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\formMain.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp3\\formMain.cs",
+              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\formMain.cs",
+              "RelativeToolTip": "WindowsFormsApp3\\formMain.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T01:23:43.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
               "Title": "Resources.resx",
               "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\Properties\\Resources.resx",
               "RelativeDocumentMoniker": "WindowsFormsApp3\\Properties\\Resources.resx",
@@ -337,180 +586,53 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "formUser.cs [Design]",
-              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formUser.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formUser.cs",
-              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formUser.cs [Design]",
-              "RelativeToolTip": "WindowsFormsApp3\\View\\formUser.cs [Design]",
+              "DocumentIndex": 27,
+              "Title": "formCategory.Designer.cs",
+              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formCategory.Designer.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formCategory.Designer.cs",
+              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formCategory.Designer.cs",
+              "RelativeToolTip": "WindowsFormsApp3\\View\\formCategory.Designer.cs",
+              "ViewState": "AgIAAPEAAAAAAAAAAAAAAMsAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T03:03:36.938Z"
+              "WhenOpened": "2024-10-25T00:24:53.608Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "formNewBill.cs [Design]",
-              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formNewBill.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formNewBill.cs",
-              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formNewBill.cs [Design]",
-              "RelativeToolTip": "WindowsFormsApp3\\View\\formNewBill.cs [Design]",
+              "DocumentIndex": 28,
+              "Title": "formCustomer.Designer.cs",
+              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formCustomer.Designer.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formCustomer.Designer.cs",
+              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formCustomer.Designer.cs",
+              "RelativeToolTip": "WindowsFormsApp3\\View\\formCustomer.Designer.cs",
+              "ViewState": "AgIAAM8AAAAAAAAAAAAowNcAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T00:56:01.431Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+              "WhenOpened": "2024-10-25T03:15:30.257Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "formStaff.cs [Design]",
-              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formStaff.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formStaff.cs",
-              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formStaff.cs [Design]",
-              "RelativeToolTip": "WindowsFormsApp3\\View\\formStaff.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T03:03:54.904Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "formCategory.cs",
+              "DocumentIndex": 26,
+              "Title": "formCategory.cs [Design]",
               "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formCategory.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formCategory.cs",
-              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formCategory.cs",
-              "RelativeToolTip": "WindowsFormsApp3\\View\\formCategory.cs",
-              "ViewState": "AgIAAI4AAAAAAAAAAAAUwBAAAAAJAAAAAAAAAA==",
+              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formCategory.cs [Design]",
+              "RelativeToolTip": "WindowsFormsApp3\\View\\formCategory.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T01:27:54.063Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T03:05:02.39Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "formViewSalesReport.cs [Design]",
-              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formViewSalesReport.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formViewSalesReport.cs",
-              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formViewSalesReport.cs [Design]",
-              "RelativeToolTip": "WindowsFormsApp3\\View\\formViewSalesReport.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T03:06:14.908Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "formSalesStatistics.cs [Design]",
-              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formSalesStatistics.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formSalesStatistics.cs",
-              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formSalesStatistics.cs [Design]",
-              "RelativeToolTip": "WindowsFormsApp3\\View\\formSalesStatistics.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T00:55:34.095Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 30,
               "Title": "WindownsFormsApp",
               "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\WindownsFormsApp.csproj",
               "RelativeDocumentMoniker": "WindowsFormsApp3\\WindownsFormsApp.csproj",
               "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\WindownsFormsApp.csproj",
               "RelativeToolTip": "WindowsFormsApp3\\WindownsFormsApp.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-10-25T02:56:35.023Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-25T02:56:35.023Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "formSalesReport.cs [Design]",
-              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formSalesReport.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formSalesReport.cs",
-              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formSalesReport.cs [Design]",
-              "RelativeToolTip": "WindowsFormsApp3\\View\\formSalesReport.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T03:03:04.183Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "formMain.cs [Design]",
-              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\formMain.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp3\\formMain.cs",
-              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\formMain.cs [Design]",
-              "RelativeToolTip": "WindowsFormsApp3\\formMain.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T03:07:54.303Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "formReportBills.cs [Design]",
-              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formReportBills.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formReportBills.cs",
-              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formReportBills.cs [Design]",
-              "RelativeToolTip": "WindowsFormsApp3\\View\\formReportBills.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T03:04:24.871Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "formPublisher.cs [Design]",
-              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formPublisher.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formPublisher.cs",
-              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formPublisher.cs [Design]",
-              "RelativeToolTip": "WindowsFormsApp3\\View\\formPublisher.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T03:04:19.525Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "formLogin.cs [Design]",
-              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formLogin.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formLogin.cs",
-              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formLogin.cs [Design]",
-              "RelativeToolTip": "WindowsFormsApp3\\View\\formLogin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T03:04:55.311Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "formChangePassword.cs [Design]",
-              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formChangePassword.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formChangePassword.cs",
-              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formChangePassword.cs [Design]",
-              "RelativeToolTip": "WindowsFormsApp3\\View\\formChangePassword.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T03:04:57.045Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "formCustomer.cs [Design]",
-              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formCustomer.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formCustomer.cs",
-              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formCustomer.cs [Design]",
-              "RelativeToolTip": "WindowsFormsApp3\\View\\formCustomer.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T03:04:59.421Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "formBook.cs [Design]",
-              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formBook.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formBook.cs",
-              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formBook.cs [Design]",
-              "RelativeToolTip": "WindowsFormsApp3\\View\\formBook.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T03:05:06.111Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 31,
               "Title": "formAuthors.cs [Design]",
               "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formAuthors.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formAuthors.cs",
@@ -521,7 +643,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 33,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\Program.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp3\\Program.cs",
@@ -533,7 +655,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 34,
               "Title": "formMain.Designer.cs",
               "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\formMain.Designer.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp3\\formMain.Designer.cs",
@@ -545,19 +667,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "formMain.cs",
-              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\formMain.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp3\\formMain.cs",
-              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\formMain.cs",
-              "RelativeToolTip": "WindowsFormsApp3\\formMain.cs",
-              "ViewState": "AgIAAHUAAAAAAAAAAAD4v38AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T01:23:43.078Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 35,
               "Title": "formUser.Designer.cs",
               "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formUser.Designer.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formUser.Designer.cs",
@@ -569,7 +679,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 32,
               "Title": "App.config",
               "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\App.config",
               "RelativeDocumentMoniker": "WindowsFormsApp3\\App.config",
@@ -582,7 +692,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 36,
               "Title": "formStaff.Designer.cs",
               "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formStaff.Designer.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formStaff.Designer.cs",
@@ -594,19 +704,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "formPublisher.cs",
-              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formPublisher.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formPublisher.cs",
-              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formPublisher.cs",
-              "RelativeToolTip": "WindowsFormsApp3\\View\\formPublisher.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAArwGgAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T01:28:06.766Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 37,
               "Title": "formAuthors.Designer.cs",
               "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formAuthors.Designer.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formAuthors.Designer.cs",
@@ -618,7 +716,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 38,
               "Title": "formBook.Designer.cs",
               "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formBook.Designer.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formBook.Designer.cs",
@@ -630,7 +728,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 39,
               "Title": "formChangePassword.Designer.cs",
               "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formChangePassword.Designer.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formChangePassword.Designer.cs",
@@ -642,7 +740,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 40,
               "Title": "formPublisher.Designer.cs",
               "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formPublisher.Designer.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formPublisher.Designer.cs",
@@ -654,7 +752,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 41,
               "Title": "formLogin.Designer.cs",
               "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formLogin.Designer.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formLogin.Designer.cs",
@@ -666,7 +764,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 42,
               "Title": "crSalesReport.rpt",
               "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\Report\\crSalesReport.rpt",
               "RelativeDocumentMoniker": "WindowsFormsApp3\\Report\\crSalesReport.rpt",
@@ -677,31 +775,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "formSalesReport.cs",
-              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formSalesReport.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formSalesReport.cs",
-              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formSalesReport.cs",
-              "RelativeToolTip": "WindowsFormsApp3\\View\\formSalesReport.cs",
-              "ViewState": "AgIAAL0AAAAAAAAAAAASwIEAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T03:07:53.663Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "formBook.cs",
-              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formBook.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formBook.cs",
-              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formBook.cs",
-              "RelativeToolTip": "WindowsFormsApp3\\View\\formBook.cs",
-              "ViewState": "AgIAANYAAAAAAAAAAADgv94AAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T01:54:18.455Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 43,
               "Title": "formSalesStatistics.Designer.cs",
               "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formSalesStatistics.Designer.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formSalesStatistics.Designer.cs",
@@ -713,31 +787,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "formSalesStatistics.cs",
-              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formSalesStatistics.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formSalesStatistics.cs",
-              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formSalesStatistics.cs",
-              "RelativeToolTip": "WindowsFormsApp3\\View\\formSalesStatistics.cs",
-              "ViewState": "AgIAAIwAAAAAAAAAAAAgwJwAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T01:03:19.012Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 47,
               "Title": "dsSalesReport.xsd",
               "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\DataSet\\dsSalesReport.xsd",
               "RelativeDocumentMoniker": "WindowsFormsApp3\\DataSet\\dsSalesReport.xsd",
               "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\DataSet\\dsSalesReport.xsd",
               "RelativeToolTip": "WindowsFormsApp3\\DataSet\\dsSalesReport.xsd",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
-              "WhenOpened": "2024-10-16T02:33:21.953Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T02:33:21.953Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 46,
               "Title": "formNewBill.Designer.cs",
               "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formNewBill.Designer.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formNewBill.Designer.cs",
@@ -745,36 +806,33 @@
               "RelativeToolTip": "WindowsFormsApp3\\View\\formNewBill.Designer.cs",
               "ViewState": "AgIAANsAAAAAAAAAAAAswOsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T15:01:23.942Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T15:01:23.942Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 44,
               "Title": "dsBook.xsd",
               "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\DataSet\\dsBook.xsd",
               "RelativeDocumentMoniker": "WindowsFormsApp3\\DataSet\\dsBook.xsd",
               "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\DataSet\\dsBook.xsd",
               "RelativeToolTip": "WindowsFormsApp3\\DataSet\\dsBook.xsd",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
-              "WhenOpened": "2024-10-23T01:22:55.523Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-23T01:22:55.523Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 45,
               "Title": "dsBillDetails.xsd",
               "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\DataSet\\dsBillDetails.xsd",
               "RelativeDocumentMoniker": "WindowsFormsApp3\\DataSet\\dsBillDetails.xsd",
               "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\DataSet\\dsBillDetails.xsd",
               "RelativeToolTip": "WindowsFormsApp3\\DataSet\\dsBillDetails.xsd",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003579|",
-              "WhenOpened": "2024-10-13T17:07:42.075Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-13T17:07:42.075Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 48,
               "Title": "BillDetail.cs",
               "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\Models\\BillDetail.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp3\\Models\\BillDetail.cs",
@@ -786,31 +844,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "formLogin.cs",
-              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formLogin.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formLogin.cs",
-              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formLogin.cs",
-              "RelativeToolTip": "WindowsFormsApp3\\View\\formLogin.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAuwJwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T01:28:01.875Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "formUser.cs",
-              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formUser.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formUser.cs",
-              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formUser.cs",
-              "RelativeToolTip": "WindowsFormsApp3\\View\\formUser.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBYAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T01:27:06.16Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 53,
               "Title": "Interfaces.cs",
               "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\DataService\\Interfaces.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp3\\DataService\\Interfaces.cs",
@@ -822,7 +856,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 52,
               "Title": "Repository.cs",
               "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\DataService\\Repository.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp3\\DataService\\Repository.cs",
@@ -834,19 +868,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "formAuthors.cs",
-              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formAuthors.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formAuthors.cs",
-              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formAuthors.cs",
-              "RelativeToolTip": "WindowsFormsApp3\\View\\formAuthors.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T01:53:51.534Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 50,
               "Title": "Staff.cs",
               "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\Models\\Staff.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp3\\Models\\Staff.cs",
@@ -858,7 +880,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 49,
               "Title": "Bill.cs",
               "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\Models\\Bill.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp3\\Models\\Bill.cs",
@@ -870,7 +892,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 54,
               "Title": "MyDbContext.cs",
               "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\DataService\\MyDbContext.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp3\\DataService\\MyDbContext.cs",
@@ -882,7 +904,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 51,
               "Title": "UnitOfWork.cs",
               "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\DataService\\UnitOfWork.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp3\\DataService\\UnitOfWork.cs",
@@ -894,7 +916,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 55,
               "Title": "CryptoLib.cs",
               "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\DataService\\CryptoLib.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp3\\DataService\\CryptoLib.cs",
@@ -906,7 +928,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 56,
               "Title": "Settings.settings",
               "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\Properties\\Settings.settings",
               "RelativeDocumentMoniker": "WindowsFormsApp3\\Properties\\Settings.settings",
@@ -918,7 +940,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 57,
               "Title": "formViewSalesReport.cs",
               "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formViewSalesReport.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formViewSalesReport.cs",
@@ -927,42 +949,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-16T03:44:17.215Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 55,
-              "Title": "formStaff.cs",
-              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formStaff.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formStaff.cs",
-              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formStaff.cs",
-              "RelativeToolTip": "WindowsFormsApp3\\View\\formStaff.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T01:28:12.29Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 56,
-              "Title": "formChangePassword.cs",
-              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formChangePassword.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formChangePassword.cs",
-              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formChangePassword.cs",
-              "RelativeToolTip": "WindowsFormsApp3\\View\\formChangePassword.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T01:27:59.355Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 57,
-              "Title": "formCustomer.cs",
-              "DocumentMoniker": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formCustomer.cs",
-              "RelativeDocumentMoniker": "WindowsFormsApp3\\View\\formCustomer.cs",
-              "ToolTip": "E:\\Workspace\\C#\\BookMan\\Book-Store-Manager-main\\WindowsFormsApp3\\View\\formCustomer.cs",
-              "RelativeToolTip": "WindowsFormsApp3\\View\\formCustomer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T01:27:56.944Z"
             },
             {
               "$type": "Document",
@@ -1009,8 +995,7 @@
               "RelativeToolTip": "WindowsFormsApp3\\DataSet\\dsBillDetails.Designer.cs",
               "ViewState": "AgIAAC0AAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T00:17:06.803Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-14T00:17:06.803Z"
             },
             {
               "$type": "Document",
@@ -1022,8 +1007,7 @@
               "RelativeToolTip": "WindowsFormsApp3\\DataSet\\dsBillDetails.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T17:10:19.597Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-13T17:10:19.597Z"
             },
             {
               "$type": "Document",
@@ -1035,8 +1019,7 @@
               "RelativeToolTip": "WindowsFormsApp3\\DataSet\\dsBillDetails.xsc",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001612|",
-              "WhenOpened": "2024-10-14T00:17:14.226Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-14T00:17:14.226Z"
             }
           ]
         }

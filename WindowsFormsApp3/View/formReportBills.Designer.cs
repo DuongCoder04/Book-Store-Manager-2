@@ -42,13 +42,14 @@
             this.crystalReportViewer.Size = new System.Drawing.Size(985, 626);
             this.crystalReportViewer.TabIndex = 0;
             // 
-            // formReport
+            // formReportBills
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(985, 626);
             this.Controls.Add(this.crystalReportViewer);
-            this.Name = "formReport";
+            this.Name = "formReportBills";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "formReport";
             this.ResumeLayout(false);
 

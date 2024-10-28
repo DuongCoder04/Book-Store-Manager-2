@@ -253,6 +253,7 @@
             this.dataGridViewBillDetails.Name = "dataGridViewBillDetails";
             this.dataGridViewBillDetails.Size = new System.Drawing.Size(418, 239);
             this.dataGridViewBillDetails.TabIndex = 22;
+            this.dataGridViewBillDetails.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewBillDetails_CellClick);
             // 
             // label6
             // 

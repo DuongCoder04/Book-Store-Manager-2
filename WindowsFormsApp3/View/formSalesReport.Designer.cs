@@ -194,6 +194,7 @@
             this.Controls.Add(this.panel2);
             this.ForeColor = System.Drawing.Color.Teal;
             this.Name = "formSalesReport";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "formSalesReport";
             this.Load += new System.EventHandler(this.formSalesReport_Load);
             this.panel1.ResumeLayout(false);

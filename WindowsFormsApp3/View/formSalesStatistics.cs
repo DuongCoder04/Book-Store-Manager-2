@@ -11,16 +11,15 @@ namespace WindowsFormsApp.View
     {
         public formSalesStatistics()
         {
+            // Ngăn người dùng thay đổi kích cỡ form
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false; // Vô hiệu hóa nút phóng to
             InitializeComponent();
         }
 
         #region Method
         void Retrieve()
         {
-            // Ngăn người dùng thay đổi kích cỡ form
-            this.FormBorderStyle = FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false; // Vô hiệu hóa nút phóng to
-
             ShowStatisticsBasedOnSelection();
             ShowStatisticsOnChart();
         }
@@ -123,7 +122,7 @@ namespace WindowsFormsApp.View
             // Tạo một series mới cho biểu đồ
             var series = new System.Windows.Forms.DataVisualization.Charting.Series
             {
-                Name = "Bảng thống kê doanh thu",
+                Name = "Doanh thu",
                 ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Column // Loại biểu đồ cột
             };
 
@@ -148,7 +147,7 @@ namespace WindowsFormsApp.View
 
                 // Cấu hình biểu đồ cho chế độ tháng
                 chartStatistics.ChartAreas[0].AxisX.Title = "Tháng";
-                chartStatistics.ChartAreas[0].AxisY.Title = "Doanh thu";
+                chartStatistics.ChartAreas[0].AxisY.Title = "Biểu đồ thống kê doanh thu";
                 chartStatistics.ChartAreas[0].AxisX.Interval = 1;  // Đặt khoảng cách giữa các nhãn trên trục X
             }
             else if (rbtYear.Checked) // Chế độ năm
@@ -168,7 +167,7 @@ namespace WindowsFormsApp.View
 
                 // Cấu hình biểu đồ cho chế độ năm
                 chartStatistics.ChartAreas[0].AxisX.Title = "Năm";
-                chartStatistics.ChartAreas[0].AxisY.Title = "Doanh thu";
+                chartStatistics.ChartAreas[0].AxisY.Title = "Biểu đồ thống kê doanh thu";
                 chartStatistics.ChartAreas[0].AxisX.Interval = 1;  // Đặt khoảng cách giữa các nhãn trên trục X
             }
         }

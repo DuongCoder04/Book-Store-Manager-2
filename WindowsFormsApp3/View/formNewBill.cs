@@ -13,6 +13,7 @@ namespace WindowsFormsApp.View
 {
     public partial class formNewBill : Form
     {
+        int idBillDetail;
         int idBook;
         string title;
         int price;
@@ -36,7 +37,7 @@ namespace WindowsFormsApp.View
                 billDetailsTable = new DataTable("BillDetails");
 
                 // Add necessary columns to the BillDetails table
-                billDetailsTable.Columns.Add("Id", typeof(int));
+                billDetailsTable.Columns.Add("IdBook", typeof(int));
                 billDetailsTable.Columns.Add("Title", typeof(string));
                 billDetailsTable.Columns.Add("Price", typeof(int));
                 billDetailsTable.Columns.Add("Quantity", typeof(int));
@@ -258,7 +259,7 @@ namespace WindowsFormsApp.View
         // Update total price based on Bill Details DataGridView
         private void UpdateTotalLabel()
         {
-            decimal total = dataGridViewBillDetails.Rows.OfType<DataGridViewRow>()
+            int total = dataGridViewBillDetails.Rows.OfType<DataGridViewRow>()
                               .Sum(row => int.Parse(row.Cells["Total"].Value.ToString()));
 
             txbTotal.Text = total.ToString("C0", new System.Globalization.CultureInfo("vi-VN"));
@@ -283,16 +284,44 @@ namespace WindowsFormsApp.View
                 using (var context = new MyDbContext())
                 {
                     string billId = txbIdBill.Text;
+
+                    // Tìm hóa đơn theo Id
                     var bill = context.myBill.SingleOrDefault(b => b.Id == billId);
                     if (bill != null)
                     {
+                        // Cập nhật thông tin hóa đơn
                         bill.CheckIn = dtCheckIn.Value.Date;
                         bill.CheckOut = dtCheckOut.Value.Date;
                         bill.IdUser = formMain.__IdUser;
                         bill.IdCustomer = int.Parse(cbIdCustomer.SelectedValue.ToString());
+
+                        // Xóa chi tiết hóa đơn cũ
+                        var existingDetails = context.myBillDetail.Where(bd => bd.IdBill == billId).ToList();
+                        context.myBillDetail.RemoveRange(existingDetails);
+
+                        // Thêm chi tiết hóa đơn mới từ DataTable billDetailsTable
+                        foreach (DataRow row in billDetailsTable.Rows)
+                        {
+                            int idBook = Convert.ToInt32(row["IdBook"]);
+                            int quantity = Convert.ToInt32(row["Quantity"]);
+                            int price = Convert.ToInt32(row["Price"]);
+
+                            var billDetail = new BillDetail
+                            {
+                                IdBill = billId,
+                                IdBook = idBook,
+                                Quantity = quantity,
+                                Price = price
+                            };
+
+                            context.myBillDetail.Add(billDetail);
+                        }
+
+                        // Lưu thay đổi vào cơ sở dữ liệu
                         return context.SaveChanges();
                     }
-                    return 0;
+
+                    return 0; // Trả về 0 nếu không tìm thấy hóa đơn
                 }
             }
             catch (Exception ex)
@@ -301,7 +330,45 @@ namespace WindowsFormsApp.View
                 return 0;
             }
         }
+
         // Delete a single BillDetail
+        private void RemoveSelectedBookFromBillDetail(int idBook, int quantityToRemove)
+        {
+            // Kiểm tra xem có hàng nào được chọn trong DataGridViewBillDetails không
+            if (dataGridViewBillDetails.CurrentRow != null)
+            {
+                // Tìm hàng tương ứng trong DataTable bằng IdBook
+                var existingRow = billDetailsTable.AsEnumerable()
+                    .FirstOrDefault(r => r.Field<int>("IdBook") == idBook);
+
+                if (existingRow != null)
+                {
+                    // Lấy số lượng hiện tại của sách trong bảng
+                    int currentQuantity = existingRow.Field<int>("Quantity");
+
+                    // Kiểm tra số lượng cần xóa
+                    if (quantityToRemove >= currentQuantity)
+                    {
+                        // Nếu số lượng cần xóa >= số lượng hiện tại, xóa dòng đó khỏi DataTable
+                        billDetailsTable.Rows.Remove(existingRow);
+                    }
+                    else
+                    {
+                        // Ngược lại, trừ số lượng cần xóa từ số lượng hiện tại
+                        existingRow["Quantity"] = currentQuantity - quantityToRemove;
+                        existingRow["Total"] = Convert.ToInt32(existingRow["Price"]) * (currentQuantity - quantityToRemove);
+                    }
+
+                    // Cập nhật lại DataGridView
+                    dataGridViewBillDetails.DataSource = billDetailsTable;
+                    dataGridViewBillDetails.Refresh();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn một sách trong chi tiết hóa đơn để xóa.", "Thông báo");
+            }
+        }
         int DeleteBillDetail(string billId, int bookId)
         {
             try
@@ -379,27 +446,30 @@ namespace WindowsFormsApp.View
             dtDateFind.Value = DateTime.Now;
             SetHeaderDataGridViewBills(); // Đặt tiêu đề cho DataGridView Bills
             SetHeaderDataGridViewBooks(); // Đặt tiêu đề cho DataGridView Books
+            SetHeaderDataGridViewBillDetails(); // Đặt tiêu đề cho DataGridView Bill Details
         }
         // Thêm sách vào chi tiết hóa đơn
         private void btnAddBook_Click(object sender, EventArgs e)
         {
-            billDetailsTable.Rows.Add(idBook, title, price, quantity);
-            //foreach (DataGridViewRow row in dataGridViewBooks.SelectedRows)
-            //{
-            //    // Check if the book already exists in the bill details
-            //    var existingRow = billDetailsTable.AsEnumerable()
-            //        .FirstOrDefault(r => r.Field<int>("Id") == idBook);
-            //    if (existingRow != null)
-            //    {
-            //        // If the book already exists, increase the quantity
-            //        existingRow["Quantity"] = int.Parse(existingRow["Quantity"].ToString()) + quantity;
-            //    }
-            //    else
-            //    {
-            //        // Add new book to the bill details table
-                    
-            //    }
-            //}
+            if (idBook > 0)
+            {
+                var existingRow = billDetailsTable.AsEnumerable()
+                    .FirstOrDefault(r => r.Field<int>("IdBook") == idBook);
+                if (existingRow != null)
+                {
+                    // If the book already exists, increase the quantity
+                    existingRow["Quantity"] = int.Parse(existingRow["Quantity"].ToString()) + quantity;
+                }
+                else
+                {
+                    // Add new book to the bill details table
+                    billDetailsTable.Rows.Add(idBook, title, price, quantity);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn sách để thêm", "Thông báo");
+            }
             dataGridViewBillDetails.DataSource = billDetailsTable;
             dataGridViewBillDetails.Refresh();
         }
@@ -485,71 +555,72 @@ namespace WindowsFormsApp.View
         // Xử lý sự kiện khi chọn một hóa đơn từ DataGridView
         private void dataGridViewBills_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            // Kiểm tra xem người dùng có chọn một hàng hợp lệ không
             if (e.RowIndex >= 0)
             {
                 try
                 {
+                    // Lấy ID của hóa đơn được chọn từ DataGridViewBills
+                    string selectedBillId = dataGridViewBills.Rows[e.RowIndex].Cells["Id"].Value.ToString();
+                    // Xóa dữ liệu cũ trong DataTable billDetailsTable để chuẩn bị cho dữ liệu mới
+                    billDetailsTable.Clear();
+                    // Lấy chi tiết hóa đơn từ cơ sở dữ liệu
                     using (var context = new MyDbContext())
                     {
-                        string billId = dataGridViewBills.Rows[e.RowIndex].Cells["Id"].Value.ToString();
-                        var rowToSelect = context.myBill.SingleOrDefault(r => r.Id == billId);
-                        if (rowToSelect != null)
+                        var bills = context.myBill.SingleOrDefault(b => b.Id == selectedBillId);
+                        if (bills != null)
                         {
-                            txbIdBill.Text = billId;
-                            cbIdCustomer.SelectedValue = rowToSelect.Customer.Id;
-                            dtCheckIn.Value = rowToSelect.CheckIn;
-                            dtCheckOut.Value = rowToSelect.CheckOut;
+                            txbIdBill.Text = bills.Id;
+                            dtCheckIn.Value = bills.CheckIn.Date;
+                            dtCheckOut.Value = bills.CheckOut.Date;
+                            cbIdCustomer.SelectedValue = bills.IdCustomer;
                         }
-                        LoadBillDetails(billId);
-                        SetHeaderDataGridViewBillDetails(); // Đặt tiêu đề cho DataGridView Bill Details
-                        UpdateTotalLabel(); // Cập nhật tổng tiền
+                        var billDetails = context.myBillDetail
+                            .Where(bd => bd.IdBill == selectedBillId)
+                            .Select(bd => new
+                            {
+                                bd.IdBook,
+                                bd.Book.Title,
+                                bd.Quantity,
+                                bd.Price,
+                                Total = bd.Quantity * bd.Price
+                            })
+                            .ToList();
+
+                        // Thêm từng chi tiết vào DataTable billDetailsTable
+                        foreach (var detail in billDetails)
+                        {
+                            DataRow row = billDetailsTable.NewRow();
+                            row["IdBook"] = detail.IdBook;
+                            row["Title"] = detail.Title;
+                            row["Quantity"] = detail.Quantity;
+                            row["Price"] = detail.Price;
+                            row["Total"] = detail.Total;
+
+                            billDetailsTable.Rows.Add(row);
+                        }
                     }
+
+                    // Gán DataTable làm nguồn dữ liệu cho DataGridViewBillDetails
+                    dataGridViewBillDetails.DataSource = billDetailsTable;
+                    dataGridViewBillDetails.Refresh();
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Có lỗi xảy ra: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
+
         // Xóa một chi tiết hóa đơn
         private void btnRemoveBillDetail_Click(object sender, EventArgs e)
         {
-            if (dataGridViewBillDetails.CurrentRow != null)
-            {
-                string billId = txbIdBill.Text;
-                int bookId = int.Parse(dataGridViewBillDetails.CurrentRow.Cells["IdBook"].Value.ToString());
-
-                if (DeleteBillDetail(billId, bookId) > 0)
-                {
-                    MessageBox.Show("Xóa chi tiết hóa đơn thành công.", "Thông báo");
-                }
-                else
-                {
-                    MessageBox.Show("Xóa chi tiết hóa đơn không thành công.", "Thông báo");
-                }
-                UpdateTotalLabel(); // Cập nhật tổng tiền
-                RetrieveBills(); // Tải lại danh sách hóa đơn và chi tiết
-            }
-            else
-            {
-                MessageBox.Show("Vui lòng chọn chi tiết hóa đơn cần xóa.", "Cảnh báo");
-            }
+            RemoveSelectedBookFromBillDetail(idBillDetail, quantity);
         }
         // Xóa tất cả chi tiết hóa đơn
         private void btnRemoveAll_Click(object sender, EventArgs e)
         {
-            string billId = txbIdBill.Text;
-
-            if (DeleteAllBillDetails(billId) > 0)
-            {
-                MessageBox.Show("Xóa tất cả chi tiết hóa đơn thành công.", "Thông báo");
-            }
-            else
-            {
-                MessageBox.Show("Xóa tất cả chi tiết hóa đơn không thành công.", "Thông báo");
-            }
-            UpdateTotalLabel(); // Cập nhật tổng tiền
-            RetrieveBills(); // Tải lại danh sách hóa đơn
+            billDetailsTable.Clear();
         }
         // Cập nhật hóa đơn
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -637,6 +708,10 @@ namespace WindowsFormsApp.View
         private void nmQuantity_ValueChanged(object sender, EventArgs e)
         {
             quantity = int.Parse(nmQuantity.Value.ToString());
+        }
+        private void dataGridViewBillDetails_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            idBillDetail = int.Parse(dataGridViewBillDetails.CurrentRow.Cells["IdBook"].Value.ToString());
         }
     }
 }

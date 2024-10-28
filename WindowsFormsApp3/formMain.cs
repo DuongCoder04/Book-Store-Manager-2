@@ -4,6 +4,7 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp
 {
+
     public partial class formMain : DevComponents.DotNetBar.Office2007RibbonForm
     {
         public static string __UserName;
@@ -13,6 +14,9 @@ namespace WindowsFormsApp
 
         public formMain()
         {
+            // Ngăn người dùng thay đổi kích cỡ form
+            this.FormBorderStyle = FormBorderStyle.FixedSingle; // Hoặc FixedDialog
+            this.MaximizeBox = false; // Vô hiệu hóa nút phóng to
             InitializeComponent();
         }
         private void formMain_Load(object sender, EventArgs e)

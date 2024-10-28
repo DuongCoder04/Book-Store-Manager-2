@@ -42,11 +42,11 @@
             this.txbIdCustomer = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnExit = new DevComponents.DotNetBar.ButtonX();
             this.btnAdd = new DevComponents.DotNetBar.ButtonX();
             this.btnUpdate = new DevComponents.DotNetBar.ButtonX();
             this.btnDelete = new DevComponents.DotNetBar.ButtonX();
             this.btnReload = new DevComponents.DotNetBar.ButtonX();
-            this.btnExit = new DevComponents.DotNetBar.ButtonX();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCustomer)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -208,6 +208,20 @@
             this.panel3.Size = new System.Drawing.Size(145, 371);
             this.panel3.TabIndex = 16;
             // 
+            // btnExit
+            // 
+            this.btnExit.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnExit.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.Color.Teal;
+            this.btnExit.Location = new System.Drawing.Point(8, 308);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(128, 55);
+            this.btnExit.TabIndex = 17;
+            this.btnExit.Text = "Trở về";
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // btnAdd
             // 
             this.btnAdd.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
@@ -256,20 +270,6 @@
             this.btnReload.Text = "Làm mới";
             this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
             // 
-            // btnExit
-            // 
-            this.btnExit.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnExit.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.ForeColor = System.Drawing.Color.Teal;
-            this.btnExit.Location = new System.Drawing.Point(8, 308);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(128, 55);
-            this.btnExit.TabIndex = 17;
-            this.btnExit.Text = "Trở về";
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
             // formCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -281,6 +281,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.dataGridViewCustomer);
             this.Name = "formCustomer";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "formCustomer";
             this.Load += new System.EventHandler(this.formCustomer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCustomer)).EndInit();

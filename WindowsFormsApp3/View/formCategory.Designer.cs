@@ -150,7 +150,7 @@
             this.btnUpdate.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnUpdate.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.Teal;
-            this.btnUpdate.Location = new System.Drawing.Point(175, 277);
+            this.btnUpdate.Location = new System.Drawing.Point(175, 306);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(128, 55);
             this.btnUpdate.TabIndex = 3;
@@ -162,7 +162,7 @@
             this.btnReload.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnReload.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReload.ForeColor = System.Drawing.Color.Teal;
-            this.btnReload.Location = new System.Drawing.Point(175, 338);
+            this.btnReload.Location = new System.Drawing.Point(175, 367);
             this.btnReload.Name = "btnReload";
             this.btnReload.Size = new System.Drawing.Size(128, 55);
             this.btnReload.TabIndex = 6;
@@ -174,7 +174,7 @@
             this.btnDelete.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnDelete.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.Teal;
-            this.btnDelete.Location = new System.Drawing.Point(14, 338);
+            this.btnDelete.Location = new System.Drawing.Point(14, 367);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(128, 55);
             this.btnDelete.TabIndex = 4;
@@ -186,7 +186,7 @@
             this.btnAdd.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnAdd.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.Teal;
-            this.btnAdd.Location = new System.Drawing.Point(14, 277);
+            this.btnAdd.Location = new System.Drawing.Point(14, 306);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(128, 55);
             this.btnAdd.TabIndex = 2;
@@ -199,7 +199,7 @@
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnExit.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.Teal;
-            this.btnExit.Location = new System.Drawing.Point(482, 27);
+            this.btnExit.Location = new System.Drawing.Point(505, 27);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(80, 35);
             this.btnExit.TabIndex = 7;
