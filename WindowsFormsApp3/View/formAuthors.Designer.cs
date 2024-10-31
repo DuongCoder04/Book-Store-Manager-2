@@ -59,7 +59,7 @@
             this.panel2.Controls.Add(this.btnReload);
             this.panel2.Controls.Add(this.btnDelete);
             this.panel2.Controls.Add(this.btnAdd);
-            this.panel2.Location = new System.Drawing.Point(301, 93);
+            this.panel2.Location = new System.Drawing.Point(263, 93);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(309, 399);
             this.panel2.TabIndex = 3;
@@ -131,9 +131,9 @@
             this.btnUpdate.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnUpdate.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.Teal;
-            this.btnUpdate.Location = new System.Drawing.Point(168, 274);
+            this.btnUpdate.Location = new System.Drawing.Point(168, 283);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(128, 55);
+            this.btnUpdate.Size = new System.Drawing.Size(128, 35);
             this.btnUpdate.TabIndex = 3;
             this.btnUpdate.Text = "Chỉnh sửa";
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
@@ -145,7 +145,7 @@
             this.btnReload.ForeColor = System.Drawing.Color.Teal;
             this.btnReload.Location = new System.Drawing.Point(168, 335);
             this.btnReload.Name = "btnReload";
-            this.btnReload.Size = new System.Drawing.Size(128, 55);
+            this.btnReload.Size = new System.Drawing.Size(128, 35);
             this.btnReload.TabIndex = 6;
             this.btnReload.Text = "Làm mới";
             this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
@@ -157,7 +157,7 @@
             this.btnDelete.ForeColor = System.Drawing.Color.Teal;
             this.btnDelete.Location = new System.Drawing.Point(12, 335);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(128, 55);
+            this.btnDelete.Size = new System.Drawing.Size(128, 35);
             this.btnDelete.TabIndex = 4;
             this.btnDelete.Text = "Xóa bỏ";
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
@@ -168,9 +168,9 @@
             this.btnAdd.BackColor = System.Drawing.Color.Transparent;
             this.btnAdd.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.Teal;
-            this.btnAdd.Location = new System.Drawing.Point(12, 274);
+            this.btnAdd.Location = new System.Drawing.Point(12, 283);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(128, 55);
+            this.btnAdd.Size = new System.Drawing.Size(128, 35);
             this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "Thêm mới";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -181,7 +181,7 @@
             this.btnExit.BackColor = System.Drawing.Color.Transparent;
             this.btnExit.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.Teal;
-            this.btnExit.Location = new System.Drawing.Point(517, 34);
+            this.btnExit.Location = new System.Drawing.Point(491, 34);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(80, 35);
             this.btnExit.TabIndex = 7;
@@ -193,7 +193,7 @@
             this.dataGridViewAuthors.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewAuthors.Location = new System.Drawing.Point(13, 93);
             this.dataGridViewAuthors.Name = "dataGridViewAuthors";
-            this.dataGridViewAuthors.Size = new System.Drawing.Size(282, 399);
+            this.dataGridViewAuthors.Size = new System.Drawing.Size(245, 399);
             this.dataGridViewAuthors.TabIndex = 2;
             this.dataGridViewAuthors.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewAuthors_CellClick);
             // 
@@ -202,7 +202,7 @@
             this.reflectionLabel1.BackColor = System.Drawing.Color.Transparent;
             this.reflectionLabel1.Location = new System.Drawing.Point(13, 17);
             this.reflectionLabel1.Name = "reflectionLabel1";
-            this.reflectionLabel1.Size = new System.Drawing.Size(294, 52);
+            this.reflectionLabel1.Size = new System.Drawing.Size(294, 70);
             this.reflectionLabel1.TabIndex = 7;
             this.reflectionLabel1.Text = "<b><font size=\"+20\">Quản lý<font color=\"#B02B2C\"> tác giả</font></font></b>";
             // 
@@ -213,7 +213,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(232)))), ((int)(((byte)(220)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(624, 508);
+            this.ClientSize = new System.Drawing.Size(586, 508);
             this.Controls.Add(this.reflectionLabel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.dataGridViewAuthors);

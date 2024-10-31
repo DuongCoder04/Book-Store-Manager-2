@@ -2,7 +2,6 @@
 using System.Data;
 using System.Data.Entity.Core.Common.CommandTrees.ExpressionBuilder;
 using System.Linq;
-using System.Security.Policy;
 using System.Windows.Forms;
 using WindowsFormsApp.DataService;
 using WindowsFormsApp.DataSet;
@@ -249,6 +248,9 @@ namespace WindowsFormsApp.View
                 LoadBooks();
                 LoadBills();
                 LoadCustomers();
+                SetHeaderDataGridViewBills();
+                SetHeaderDataGridViewBooks();
+                SetHeaderDataGridViewBillDetails();
             }
             catch (Exception ex)
             {
@@ -268,13 +270,31 @@ namespace WindowsFormsApp.View
         // Set permission for buttons based on user role
         void SetPermission(string permission)
         {
-            bool isEnabled = permission == "manager" || permission == "staff";
-            btnInsert.Enabled = isEnabled;
-            btnAddBillDetail.Enabled = isEnabled;
-            btnRemoveBillDetail.Enabled = isEnabled;
-            btnRemoveAll.Enabled = isEnabled;
-            btnUpdate.Enabled = isEnabled;
-            btnViewBill.Enabled = isEnabled;
+            if (permission == "manager")
+            {
+                btnInsert.Enabled = true;
+                btnUpdate.Enabled = true;
+                btnDelete.Enabled = true;
+                btnViewBill.Enabled = true;
+                btnReload.Enabled = true;
+                btnAddBillDetail.Enabled = true;
+                btnRemoveBillDetail.Enabled = true;
+                btnRemoveAll.Enabled = true;
+                btnFind.Enabled = true;
+            }
+            else
+            {
+                btnInsert.Enabled = true;
+                btnUpdate.Enabled = false;
+                btnDelete.Enabled = false;
+                btnViewBill.Enabled = true;
+                btnReload.Enabled = true;
+                btnAddBillDetail.Enabled = true;
+                btnRemoveBillDetail.Enabled = true;
+                btnRemoveAll.Enabled = true;
+                btnFind.Enabled = true;
+            }
+            
         }
         // Update existing Bill
         int UpdateBill()
@@ -418,7 +438,7 @@ namespace WindowsFormsApp.View
                 {
                     var results = context.myBill
                                          .Where(c => c.CheckOut <= dtDateFind.Value)
-                                         .Select(c => new { c.Id, c.CheckOut })
+                                         .Select(c => new { c.Id, c.CheckIn, c.CheckOut, c.User.Staff.NameStaff })
                                          .ToList();
                     dataGridViewBills.DataSource = results;
                 }
@@ -500,7 +520,7 @@ namespace WindowsFormsApp.View
                         var billDetail = new BillDetail
                         {
                             IdBill = newBillId,
-                            IdBook = int.Parse(row["Id"].ToString()),
+                            IdBook = int.Parse(row["IdBook"].ToString()),
                             Quantity = int.Parse(row["Quantity"].ToString()),
                             Price = int.Parse(row["Price"].ToString())
                         };

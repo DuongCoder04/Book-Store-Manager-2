@@ -61,9 +61,9 @@
             this.panel2.Controls.Add(this.btnReload);
             this.panel2.Controls.Add(this.btnDelete);
             this.panel2.Controls.Add(this.btnAdd);
-            this.panel2.Location = new System.Drawing.Point(300, 69);
+            this.panel2.Location = new System.Drawing.Point(271, 69);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(309, 483);
+            this.panel2.Size = new System.Drawing.Size(309, 368);
             this.panel2.TabIndex = 3;
             // 
             // txbSearch
@@ -133,9 +133,9 @@
             this.btnUpdate.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnUpdate.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.Teal;
-            this.btnUpdate.Location = new System.Drawing.Point(161, 356);
+            this.btnUpdate.Location = new System.Drawing.Point(166, 277);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(128, 55);
+            this.btnUpdate.Size = new System.Drawing.Size(128, 35);
             this.btnUpdate.TabIndex = 3;
             this.btnUpdate.Text = "Chỉnh sửa";
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
@@ -145,9 +145,9 @@
             this.btnReload.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnReload.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReload.ForeColor = System.Drawing.Color.Teal;
-            this.btnReload.Location = new System.Drawing.Point(161, 417);
+            this.btnReload.Location = new System.Drawing.Point(166, 326);
             this.btnReload.Name = "btnReload";
-            this.btnReload.Size = new System.Drawing.Size(128, 55);
+            this.btnReload.Size = new System.Drawing.Size(128, 35);
             this.btnReload.TabIndex = 6;
             this.btnReload.Text = "Làm mới";
             this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
@@ -157,9 +157,9 @@
             this.btnDelete.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnDelete.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.Teal;
-            this.btnDelete.Location = new System.Drawing.Point(8, 417);
+            this.btnDelete.Location = new System.Drawing.Point(13, 326);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(128, 55);
+            this.btnDelete.Size = new System.Drawing.Size(128, 35);
             this.btnDelete.TabIndex = 4;
             this.btnDelete.Text = "Xóa bỏ";
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
@@ -169,9 +169,9 @@
             this.btnAdd.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnAdd.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.Teal;
-            this.btnAdd.Location = new System.Drawing.Point(8, 356);
+            this.btnAdd.Location = new System.Drawing.Point(13, 277);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(128, 55);
+            this.btnAdd.Size = new System.Drawing.Size(128, 35);
             this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "Thêm mới";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -181,7 +181,7 @@
             this.panel1.Controls.Add(this.dataGridViewPublisher);
             this.panel1.Location = new System.Drawing.Point(13, 69);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(281, 484);
+            this.panel1.Size = new System.Drawing.Size(252, 368);
             this.panel1.TabIndex = 2;
             // 
             // dataGridViewPublisher
@@ -189,7 +189,7 @@
             this.dataGridViewPublisher.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewPublisher.Location = new System.Drawing.Point(4, 2);
             this.dataGridViewPublisher.Name = "dataGridViewPublisher";
-            this.dataGridViewPublisher.Size = new System.Drawing.Size(274, 478);
+            this.dataGridViewPublisher.Size = new System.Drawing.Size(241, 366);
             this.dataGridViewPublisher.TabIndex = 0;
             this.dataGridViewPublisher.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewPublisher_CellClick);
             // 
@@ -208,7 +208,7 @@
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnExit.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.Teal;
-            this.btnExit.Location = new System.Drawing.Point(519, 23);
+            this.btnExit.Location = new System.Drawing.Point(490, 23);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(90, 35);
             this.btnExit.TabIndex = 7;
@@ -223,7 +223,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(232)))), ((int)(((byte)(220)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CancelButton = this.btnExit;
-            this.ClientSize = new System.Drawing.Size(625, 568);
+            this.ClientSize = new System.Drawing.Size(595, 448);
             this.Controls.Add(this.reflectionLabel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

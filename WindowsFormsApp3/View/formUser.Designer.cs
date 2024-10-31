@@ -32,7 +32,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.cbStaff = new System.Windows.Forms.ComboBox();
             this.txbSearch = new System.Windows.Forms.TextBox();
-            this.txbPermision = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txbPassword = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -72,6 +71,7 @@
             this.ribbonTabItem1 = new DevComponents.DotNetBar.RibbonTabItem();
             this.btnExit = new DevComponents.DotNetBar.ButtonX();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.cbPermision = new System.Windows.Forms.ComboBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUser)).BeginInit();
             this.panel1.SuspendLayout();
@@ -81,9 +81,9 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.Controls.Add(this.cbPermision);
             this.panel2.Controls.Add(this.cbStaff);
             this.panel2.Controls.Add(this.txbSearch);
-            this.panel2.Controls.Add(this.txbPermision);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.txbPassword);
             this.panel2.Controls.Add(this.label6);
@@ -95,34 +95,26 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(12, 66);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(631, 121);
+            this.panel2.Size = new System.Drawing.Size(562, 121);
             this.panel2.TabIndex = 5;
             // 
             // cbStaff
             // 
             this.cbStaff.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.cbStaff.FormattingEnabled = true;
-            this.cbStaff.Location = new System.Drawing.Point(20, 86);
+            this.cbStaff.Location = new System.Drawing.Point(8, 84);
             this.cbStaff.Name = "cbStaff";
-            this.cbStaff.Size = new System.Drawing.Size(181, 28);
+            this.cbStaff.Size = new System.Drawing.Size(156, 28);
             this.cbStaff.TabIndex = 10;
             // 
             // txbSearch
             // 
             this.txbSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbSearch.Location = new System.Drawing.Point(408, 86);
+            this.txbSearch.Location = new System.Drawing.Point(364, 84);
             this.txbSearch.Name = "txbSearch";
-            this.txbSearch.Size = new System.Drawing.Size(207, 26);
+            this.txbSearch.Size = new System.Drawing.Size(188, 26);
             this.txbSearch.TabIndex = 4;
             this.txbSearch.TextChanged += new System.EventHandler(this.txbSearch_TextChanged);
-            // 
-            // txbPermision
-            // 
-            this.txbPermision.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbPermision.Location = new System.Drawing.Point(408, 35);
-            this.txbPermision.Name = "txbPermision";
-            this.txbPermision.Size = new System.Drawing.Size(207, 26);
-            this.txbPermision.TabIndex = 3;
             // 
             // label5
             // 
@@ -130,7 +122,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Teal;
-            this.label5.Location = new System.Drawing.Point(404, 64);
+            this.label5.Location = new System.Drawing.Point(360, 62);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(85, 19);
             this.label5.TabIndex = 1;
@@ -139,9 +131,9 @@
             // txbPassword
             // 
             this.txbPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbPassword.Location = new System.Drawing.Point(210, 87);
+            this.txbPassword.Location = new System.Drawing.Point(175, 85);
             this.txbPassword.Name = "txbPassword";
-            this.txbPassword.Size = new System.Drawing.Size(189, 26);
+            this.txbPassword.Size = new System.Drawing.Size(177, 26);
             this.txbPassword.TabIndex = 2;
             // 
             // label6
@@ -150,7 +142,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Teal;
-            this.label6.Location = new System.Drawing.Point(20, 66);
+            this.label6.Location = new System.Drawing.Point(8, 64);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(90, 19);
             this.label6.TabIndex = 1;
@@ -162,7 +154,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Teal;
-            this.label4.Location = new System.Drawing.Point(405, 13);
+            this.label4.Location = new System.Drawing.Point(361, 11);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(104, 19);
             this.label4.TabIndex = 1;
@@ -171,18 +163,18 @@
             // txbIdUser
             // 
             this.txbIdUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbIdUser.Location = new System.Drawing.Point(20, 37);
+            this.txbIdUser.Location = new System.Drawing.Point(8, 35);
             this.txbIdUser.Name = "txbIdUser";
             this.txbIdUser.ReadOnly = true;
-            this.txbIdUser.Size = new System.Drawing.Size(181, 26);
+            this.txbIdUser.Size = new System.Drawing.Size(156, 26);
             this.txbIdUser.TabIndex = 0;
             // 
             // txbNameUser
             // 
             this.txbNameUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbNameUser.Location = new System.Drawing.Point(210, 36);
+            this.txbNameUser.Location = new System.Drawing.Point(175, 34);
             this.txbNameUser.Name = "txbNameUser";
-            this.txbNameUser.Size = new System.Drawing.Size(189, 26);
+            this.txbNameUser.Size = new System.Drawing.Size(177, 26);
             this.txbNameUser.TabIndex = 1;
             // 
             // label1
@@ -191,7 +183,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Teal;
-            this.label1.Location = new System.Drawing.Point(20, 15);
+            this.label1.Location = new System.Drawing.Point(8, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(131, 19);
             this.label1.TabIndex = 1;
@@ -203,7 +195,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Teal;
-            this.label3.Location = new System.Drawing.Point(207, 65);
+            this.label3.Location = new System.Drawing.Point(172, 63);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 19);
             this.label3.TabIndex = 1;
@@ -215,7 +207,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Teal;
-            this.label2.Location = new System.Drawing.Point(206, 14);
+            this.label2.Location = new System.Drawing.Point(171, 12);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(138, 19);
             this.label2.TabIndex = 1;
@@ -226,9 +218,9 @@
             this.btnUpdate.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnUpdate.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.Color.Teal;
-            this.btnUpdate.Location = new System.Drawing.Point(3, 64);
+            this.btnUpdate.Location = new System.Drawing.Point(146, 3);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(128, 55);
+            this.btnUpdate.Size = new System.Drawing.Size(128, 35);
             this.btnUpdate.TabIndex = 6;
             this.btnUpdate.Text = "Chỉnh sửa";
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
@@ -238,9 +230,9 @@
             this.btnReload.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnReload.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReload.ForeColor = System.Drawing.Color.Teal;
-            this.btnReload.Location = new System.Drawing.Point(3, 186);
+            this.btnReload.Location = new System.Drawing.Point(423, 3);
             this.btnReload.Name = "btnReload";
-            this.btnReload.Size = new System.Drawing.Size(128, 55);
+            this.btnReload.Size = new System.Drawing.Size(128, 35);
             this.btnReload.TabIndex = 9;
             this.btnReload.Text = "Làm mới";
             this.btnReload.Click += new System.EventHandler(this.btnReload_Click);
@@ -250,9 +242,9 @@
             this.btnDelete.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnDelete.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.Teal;
-            this.btnDelete.Location = new System.Drawing.Point(3, 125);
+            this.btnDelete.Location = new System.Drawing.Point(284, 3);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(128, 55);
+            this.btnDelete.Size = new System.Drawing.Size(128, 35);
             this.btnDelete.TabIndex = 7;
             this.btnDelete.Text = "Xóa bỏ";
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
@@ -262,9 +254,9 @@
             this.btnAdd.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnAdd.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.Teal;
-            this.btnAdd.Location = new System.Drawing.Point(3, 3);
+            this.btnAdd.Location = new System.Drawing.Point(7, 3);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(128, 55);
+            this.btnAdd.Size = new System.Drawing.Size(128, 35);
             this.btnAdd.TabIndex = 5;
             this.btnAdd.Text = "Thêm mới";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -282,9 +274,9 @@
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewUser.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridViewUser.Location = new System.Drawing.Point(4, 4);
+            this.dataGridViewUser.Location = new System.Drawing.Point(4, 3);
             this.dataGridViewUser.Name = "dataGridViewUser";
-            this.dataGridViewUser.Size = new System.Drawing.Size(481, 382);
+            this.dataGridViewUser.Size = new System.Drawing.Size(548, 246);
             this.dataGridViewUser.TabIndex = 0;
             this.dataGridViewUser.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewUser_CellClick);
             // 
@@ -302,9 +294,9 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.dataGridViewUser);
-            this.panel1.Location = new System.Drawing.Point(12, 193);
+            this.panel1.Location = new System.Drawing.Point(12, 243);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(488, 392);
+            this.panel1.Size = new System.Drawing.Size(562, 253);
             this.panel1.TabIndex = 4;
             // 
             // itemContainer1
@@ -516,9 +508,9 @@
             this.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnExit.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.Teal;
-            this.btnExit.Location = new System.Drawing.Point(3, 330);
+            this.btnExit.Location = new System.Drawing.Point(483, 25);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(128, 55);
+            this.btnExit.Size = new System.Drawing.Size(90, 35);
             this.btnExit.TabIndex = 10;
             this.btnExit.Text = "Trở về";
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
@@ -529,11 +521,19 @@
             this.panel3.Controls.Add(this.btnUpdate);
             this.panel3.Controls.Add(this.btnDelete);
             this.panel3.Controls.Add(this.btnReload);
-            this.panel3.Controls.Add(this.btnExit);
-            this.panel3.Location = new System.Drawing.Point(506, 194);
+            this.panel3.Location = new System.Drawing.Point(12, 193);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(137, 391);
+            this.panel3.Size = new System.Drawing.Size(562, 45);
             this.panel3.TabIndex = 11;
+            // 
+            // cbPermision
+            // 
+            this.cbPermision.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbPermision.FormattingEnabled = true;
+            this.cbPermision.Location = new System.Drawing.Point(365, 33);
+            this.cbPermision.Name = "cbPermision";
+            this.cbPermision.Size = new System.Drawing.Size(186, 28);
+            this.cbPermision.TabIndex = 11;
             // 
             // formUser
             // 
@@ -543,11 +543,12 @@
             this.BackColor = System.Drawing.Color.PapayaWhip;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.CancelButton = this.btnExit;
-            this.ClientSize = new System.Drawing.Size(661, 606);
+            this.ClientSize = new System.Drawing.Size(590, 508);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.reflectionLabel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.btnExit);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "formUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -565,7 +566,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox txbPermision;
         private System.Windows.Forms.TextBox txbPassword;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txbNameUser;
@@ -607,5 +607,6 @@
         private System.Windows.Forms.ComboBox cbStaff;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.ComboBox cbPermision;
     }
 }

@@ -45,7 +45,7 @@ namespace WindowsFormsApp.View
                 NameStaff = txbNameStaff.Text,
                 Address = txbAddress.Text,
                 Phone = txbPhone.Text,
-                Position = txbPosition.Text
+                Position = cbPosition.SelectedItem.ToString()
             };
             context.myStaff.Add(staff);
             return context.SaveChanges();
@@ -61,7 +61,7 @@ namespace WindowsFormsApp.View
                     staff.NameStaff = txbNameStaff.Text;
                     staff.Address = txbAddress.Text;
                     staff.Phone = txbPhone.Text;
-                    staff.Position = txbPosition.Text;
+                    staff.Position = cbPosition.SelectedItem.ToString();
                     return context.SaveChanges();
                 }
             }
@@ -97,6 +97,13 @@ namespace WindowsFormsApp.View
             MessageBox.Show(message, title, MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
+        void SetDataPosition()
+        {
+            cbPosition.Items.Clear();
+            cbPosition.Items.Add("Manager");
+            cbPosition.Items.Add("Staff");
+            cbPosition.SelectedIndex = 0;
+        }
         #endregion
 
         #region Event
@@ -104,6 +111,7 @@ namespace WindowsFormsApp.View
         private void formStaff_Load(object sender, EventArgs e)
         {
             Retrieve();
+            SetDataPosition();
             SetPermission(formMain.__Permision);
             SetGridHeaders();
         }
@@ -158,7 +166,7 @@ namespace WindowsFormsApp.View
                         txbNameStaff.Text = staff.NameStaff;
                         txbAddress.Text = staff.Address;
                         txbPhone.Text = staff.Phone;
-                        txbPosition.Text = staff.Position;
+                        cbPosition.SelectedItem = staff.Position;
                     }
                 }
             }

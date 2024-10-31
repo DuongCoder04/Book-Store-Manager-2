@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Configuration;
 using System.Windows.Forms;
 using WindowsFormsApp.View;
 
@@ -14,7 +15,18 @@ namespace WindowsFormsApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new formMain());
+            // Kiểm tra cấu hình
+            string isConfigured = ConfigurationManager.AppSettings["IsConfigured"];
+            if (isConfigured == "false")
+            {
+                // Hiển thị FormDatabaseSetup
+                Application.Run(new formConnection());
+            }
+            else
+            {
+                // Tiếp tục vào ứng dụng chính
+                Application.Run(new formMain());
+            }
         }
     }
 }

@@ -15,13 +15,25 @@ namespace WindowsFormsApp.View
             this.FormBorderStyle = FormBorderStyle.FixedSingle; // Hoặc FixedDialog
             this.MaximizeBox = false; // Vô hiệu hóa nút phóng to
         }
-
-        private void formCustomer_Load(object sender, EventArgs e)
+        #region Method
+        void SetPermission(string permission)
         {
-            Retrieve();
-            ConfigureDataGridView();
-        }
+            if (permission == "manager")
+            {
+                btnAdd.Enabled = true;
+                btnUpdate.Enabled = true;
+                btnDelete.Enabled = true;
+                btnReload.Enabled = true;
+            }
+            else
+            {
+                btnAdd.Enabled = false;
+                btnUpdate.Enabled = false;
+                btnDelete.Enabled = false;
+                btnReload.Enabled = true;
+            }
 
+        }
         private void ConfigureDataGridView()
         {
             dataGridViewCustomer.Columns["Id"].HeaderText = "Mã khách hàng";
@@ -29,7 +41,6 @@ namespace WindowsFormsApp.View
             dataGridViewCustomer.Columns["Address"].HeaderText = "Địa chỉ";
             dataGridViewCustomer.Columns["Phone"].HeaderText = "Số điện thoại";
         }
-
         private void Retrieve()
         {
             using (var context = new MyDbContext())
@@ -39,16 +50,6 @@ namespace WindowsFormsApp.View
                     .ToList();
             }
         }
-
-        private void SetPermission(string permission)
-        {
-            bool isManager = permission == "manager";
-            btnDelete.Enabled = isManager;
-            btnUpdate.Enabled = isManager;
-            btnAdd.Enabled = isManager;
-            btnReload.Enabled = true;
-        }
-
         private int InsertCustomer()
         {
             using (var context = new MyDbContext())
@@ -63,7 +64,6 @@ namespace WindowsFormsApp.View
                 return context.SaveChanges();
             }
         }
-
         private int UpdateCustomer()
         {
             using (var context = new MyDbContext())
@@ -87,7 +87,6 @@ namespace WindowsFormsApp.View
                 return 0;
             }
         }
-
         private int DeleteCustomer()
         {
             using (var context = new MyDbContext())
@@ -109,7 +108,6 @@ namespace WindowsFormsApp.View
                 return 0;
             }
         }
-
         private void SearchCustomers(string key)
         {
             using (var context = new MyDbContext())
@@ -121,41 +119,40 @@ namespace WindowsFormsApp.View
                 dataGridViewCustomer.DataSource = result;
             }
         }
-
         private void ShowErrorMessage(string message)
         {
             MessageBox.Show(message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
-
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-            ShowMessage(InsertCustomer() > 0, "Thêm dữ liệu");
-            ReloadData();
-        }
-
-        private void btnUpdate_Click(object sender, EventArgs e)
-        {
-            ShowMessage(UpdateCustomer() > 0, "Sửa dữ liệu");
-            ReloadData();
-        }
-
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-            ShowMessage(DeleteCustomer() > 0, "Xóa dữ liệu");
-            ReloadData();
-        }
-
-        private void ReloadData()
-        {
-            Retrieve();
-        }
-
         private void ShowMessage(bool success, string action)
         {
             string message = success ? $"{action} thành công" : $"{action} không thành công";
             MessageBox.Show(message, "Thông báo");
         }
+        #endregion
+        #region Event
+        private void formCustomer_Load(object sender, EventArgs e)
+        {
+            Retrieve();
+            SetPermission(formMain.__Permision);
+            ConfigureDataGridView();
+        }
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            ShowMessage(InsertCustomer() > 0, "Thêm dữ liệu");
+            Retrieve();
+        }
 
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            ShowMessage(UpdateCustomer() > 0, "Sửa dữ liệu");
+            Retrieve();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            ShowMessage(DeleteCustomer() > 0, "Xóa dữ liệu");
+            Retrieve();
+        }
         private void btnExit_Click(object sender, EventArgs e)
         {
             Close();
@@ -179,7 +176,6 @@ namespace WindowsFormsApp.View
                 }
             }
         }
-
         private void txbSearch_TextChanged(object sender, EventArgs e)
         {
             string searchText = txbSearch.Text;
@@ -197,5 +193,6 @@ namespace WindowsFormsApp.View
         {
             Retrieve();
         }
+        #endregion
     }
 }

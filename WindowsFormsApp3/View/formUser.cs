@@ -38,7 +38,7 @@ namespace WindowsFormsApp.View
                 {
                     UserName = txbNameUser.Text,
                     Password = CryptoLib.Encryptor.MD5Hash(txbPassword.Text),
-                    Permision = txbPermision.Text,
+                    Permision = cbPermision.SelectedItem.ToString(),
                     IdStaff = int.Parse(cbStaff.SelectedValue.ToString())
                 };
                 context.myUser.Add(c);
@@ -78,7 +78,7 @@ namespace WindowsFormsApp.View
                     {
                         rowToUpdate.UserName = txbNameUser.Text;
                         rowToUpdate.Password = CryptoLib.Encryptor.MD5Hash(txbPassword.Text);
-                        rowToUpdate.Permision = txbPermision.Text;
+                        rowToUpdate.Permision = cbPermision.SelectedItem.ToString();
                         rowToUpdate.IdStaff = int.Parse(cbStaff.SelectedValue.ToString());
                     }
                     else return 0;
@@ -117,16 +117,28 @@ namespace WindowsFormsApp.View
                 dataGridViewUser.DataSource = result.ToList();
             }
         }
-        #endregion
-        #region Event
-        private void formUser_Load(object sender, EventArgs e)
+        void SetDataPermision()
         {
-            Retrieve();
+            cbPermision.Items.Clear();
+            cbPermision.Items.Add("Manager");
+            cbPermision.Items.Add("Staff");
+            cbPermision.SelectedIndex = 0;
+        }
+        void SetHeaderDGV()
+        {
             dataGridViewUser.Columns["Id"].HeaderText = "Mã người dùng";
             dataGridViewUser.Columns["UserName"].HeaderText = "Tên người dùng";
             dataGridViewUser.Columns["Password"].HeaderText = "Mật khẩu";
             dataGridViewUser.Columns["Permision"].HeaderText = "Quyền truy cập";
             dataGridViewUser.Columns["IdStaff"].HeaderText = "Mã nhân viên";
+        }
+        #endregion
+        #region Event
+        private void formUser_Load(object sender, EventArgs e)
+        {
+            Retrieve();
+            SetDataPermision();
+            SetHeaderDGV();
         }
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -187,7 +199,7 @@ namespace WindowsFormsApp.View
                         txbIdUser.Text = rowToSelect.ID.ToString();
                         txbNameUser.Text = rowToSelect.UserName;
                         txbPassword.Text = rowToSelect.Password;
-                        txbPermision.Text = rowToSelect.Permision;
+                        cbPermision.SelectedItem = rowToSelect.Permision;
                         cbStaff.SelectedValue = rowToSelect.IdStaff;
                     }
                 }

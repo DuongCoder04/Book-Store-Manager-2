@@ -8,6 +8,7 @@ namespace WindowsFormsApp.View
 {
     public partial class formBook : Form
     {
+        private int _rating;
         public formBook()
         {
             InitializeComponent();
@@ -70,7 +71,8 @@ namespace WindowsFormsApp.View
                 IdAuthors = int.Parse(cbAuthors.SelectedValue.ToString()),
                 IdPublisher = int.Parse(cbPublisher.SelectedValue.ToString()),
                 IdCategory = int.Parse(cbCategory.SelectedValue.ToString()),
-                Rating = int.TryParse(txbRating.Text, out var rate) ? rate : 0,
+                Rating = _rating,
+                //Rating = int.TryParse(cbRating.SelectedValue.ToString(), out var rate) ? rate : 0,
                 Description = txbDescription.Text,
                 Year = int.TryParse(txbYear.Text, out var year) ? year : 0,
                 Edition = int.TryParse(txbEdition.Text, out var edition) ? edition : 0,
@@ -124,7 +126,8 @@ namespace WindowsFormsApp.View
         {
             return SaveChanges(context =>
             {
-                var rowToDelete = context.myBooks.SingleOrDefault(r => r.Id == int.Parse(txbIdBook.Text));
+                int UID = int.Parse(txbIdBook.Text);
+                var rowToDelete = context.myBooks.SingleOrDefault(r => r.Id == UID);
                 if (rowToDelete != null) context.myBooks.Remove(rowToDelete);
             });
         }
@@ -181,11 +184,21 @@ namespace WindowsFormsApp.View
             dataGridViewBook.Columns["Price"].DefaultCellStyle.Format = "C0";
             dataGridViewBook.Columns["Price"].DefaultCellStyle.FormatProvider = new System.Globalization.CultureInfo("vi-VN");
         }
+        private void SetDatacbRating()
+        {
+            cbRating.Items.Clear();
+            for (int i = 1; i <= 5; i++)
+            {
+                cbRating.Items.Add(i);
+            }
+            cbRating.SelectedIndex = 0;
+        }
         #endregion
 
         #region Events
         private void formBook_Load(object sender, EventArgs e)
         {
+            SetDatacbRating();
             Retrieve();
             SetPermissions(formMain.__Permision);
             UpdateDataGridHeaders();
@@ -229,7 +242,7 @@ namespace WindowsFormsApp.View
                         cbAuthors.SelectedValue = rowToSelect.IdAuthors;
                         cbPublisher.SelectedValue = rowToSelect.IdPublisher;
                         cbCategory.SelectedValue = rowToSelect.IdCategory;
-                        txbRating.Text = rowToSelect.Rating.ToString();
+                        cbRating.SelectedItem = rowToSelect.Rating;
                         txbDescription.Text = rowToSelect.Description;
                         txbYear.Text = rowToSelect.Year.ToString();
                         txbEdition.Text = rowToSelect.Edition.ToString();
@@ -269,6 +282,10 @@ namespace WindowsFormsApp.View
             {
                 Search(txbSearch.Text);
             }
+        }
+        private void cbRating_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _rating = int.Parse(cbRating.SelectedItem.ToString());
         }
         #endregion
     }

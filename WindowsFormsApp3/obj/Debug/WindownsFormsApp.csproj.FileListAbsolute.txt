@@ -68,3 +68,4 @@ E:\Workspace\C#\BookMan\Book-Store-Manager-main\WindowsFormsApp3\obj\Debug\Windo
 E:\Workspace\C#\BookMan\Book-Store-Manager-main\WindowsFormsApp3\obj\Debug\WindowsFormsApp.View.formSalesReport.resources
 E:\Workspace\C#\BookMan\Book-Store-Manager-main\WindowsFormsApp3\obj\Debug\WindowsFormsApp.View.formViewSalesReport.resources
 E:\Workspace\C#\BookMan\Book-Store-Manager-main\WindowsFormsApp3\obj\Debug\WindowsFormsApp.View.formSalesStatistics.resources
+E:\Workspace\C#\BookMan\Book-Store-Manager-main\WindowsFormsApp3\obj\Debug\WindowsFormsApp.View.formConnection.resources

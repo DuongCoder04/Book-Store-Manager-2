@@ -57,6 +57,7 @@ namespace WindowsFormsApp.View
             var result = context.myBillDetail
                                 .Where(c => c.Book.Title.Contains(key) 
                                 || c.Price.ToString().Contains(key) 
+                                || c.IdBill.ToString().Contains(key)
                                 || c.Quantity.ToString().Contains(key))
                                 .Select(c => new {
                                     c.IdBook,
