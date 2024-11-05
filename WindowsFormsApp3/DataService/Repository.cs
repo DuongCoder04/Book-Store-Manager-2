@@ -23,7 +23,6 @@ namespace WindowsFormsApp.DataService
         /// _entities.Where();  
         /// _entities.SingleOrDefault();  
         /// </summary> 
-
         public Repository(DbContext dbContext)
         {
             _dbContext = dbContext;

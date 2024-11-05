@@ -1,5 +1,4 @@
 ﻿using System.Data.Entity;
-using System.Linq;
 using WindowsFormsApp.Models;
 
 namespace WindowsFormsApp.DataService
@@ -11,7 +10,6 @@ namespace WindowsFormsApp.DataService
             var initializer = new MigrateDatabaseToLatestVersion<MyDbContext, Migrations.Configuration>();
             Database.SetInitializer(initializer);
         }
-
         public virtual DbSet<Book> myBooks { get; set; }
         public virtual DbSet<Category> myCategory { get; set; }
         public virtual DbSet<Authors> myAuthors { get; set; }
@@ -24,7 +22,6 @@ namespace WindowsFormsApp.DataService
 
     }
 }
-
 // Các lệnh migrations (chạy trong Package Manager Console)
 // enable-migrations -EnableAutomaticMigration:$true
 // Add-Migration Initial -IgnoreChanges
